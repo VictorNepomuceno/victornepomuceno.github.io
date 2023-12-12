@@ -362,6 +362,16 @@ section {
   }
 }
 
+@media (max-width: 450px) {
+  .menu-icons > a {
+    font-size: 30px;
+  }
+
+  .menu-icons {
+    bottom: -155px;
+  }
+}
+
 #about {
   margin-top: 150px;
 }
