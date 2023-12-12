@@ -1,15 +1,20 @@
 const toggleMenu = document.querySelector(".toggleMenu");
-const listMenu = document.querySelector(".nav-menu");
-const navMenu = document.querySelector(".toggleNav");
 
-toggleMenu.onclick = function () {
+function menuAtivo(event) {
+  if (event.type === "touchstart") event.prevent.default();
+
+  const listMenu = document.querySelector(".nav-menu");
   listMenu.classList.toggle("active");
+  const navMenu = document.querySelector(".toggleNav");
   navMenu.classList.toggle("active");
-};
 
-document.onclick = function (event) {
-  if (!listMenu.contains(event.target) && !toggleMenu.contains(event.target)) {
-    listMenu.classList.remove("active");
-    navMenu.classList.remove("active");
-  }
-};
+  document.onclick = function (e) {
+    if (!listMenu.contains(e.target) && !toggleMenu.contains(e.target)) {
+      navMenu.classList.remove("active");
+      listMenu.classList.remove("active");
+    }
+  };
+}
+
+toggleMenu.addEventListener("click", menuAtivo);
+toggleMenu.addEventListener("touchstart", menuAtivo);
