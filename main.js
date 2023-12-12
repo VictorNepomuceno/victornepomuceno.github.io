@@ -18,3 +18,26 @@ function menuAtivo(event) {
 
 toggleMenu.addEventListener("click", menuAtivo);
 toggleMenu.addEventListener("touchstart", menuAtivo);
+
+const trilho = document.querySelector(".container");
+
+function mover() {
+  trilho.classList.toggle("ativo");
+}
+
+trilho.addEventListener("click", mover);
+
+const btn = document.getElementById("btn");
+const logoItem = document.querySelector(".logo");
+const devLinks = document.querySelector(".dev-links");
+const introInfo = document.querySelector(".intro_info");
+const devSocials = document.querySelector(".dev-socials");
+btn.addEventListener("change", (e) => {
+  const listMenu = document.querySelector(".nav-menu");
+  document.body.classList.toggle("dark", e.target.checked);
+  logoItem.classList.toggle("dark", e.target.checked);
+  listMenu.classList.toggle("dark", e.target.checked);
+  devLinks.classList.toggle("dark", e.target.checked);
+  introInfo.classList.toggle("dark", e.target.checked);
+  devSocials.classList.toggle("dark", e.target.checked);
+});
