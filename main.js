@@ -1,11 +1,15 @@
 const toggleMenu = document.querySelector(".toggleMenu");
+const listMenu = document.querySelector(".nav-menu");
+const navMenu = document.querySelector(".toggleNav");
 
-function menuAtivo() {
-  const listMenu = document.querySelector(".nav-menu");
+toggleMenu.onclick = function () {
   listMenu.classList.toggle("active");
-
-  const navMenu = document.querySelector(".toggleNav");
   navMenu.classList.toggle("active");
-}
+};
 
-toggleMenu.addEventListener("click", menuAtivo);
+document.onclick = function (event) {
+  if (!listMenu.contains(event.target) && !toggleMenu.contains(event.target)) {
+    listMenu.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+};

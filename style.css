@@ -229,7 +229,7 @@ section {
     position: absolute;
     display: flex;
     flex-direction: column;
-    border-radius: 0px 0px 5px 0px;
+    border-radius: 0px 0px 0px 0px;
     top: 70px;
     left: 0px;
     gap: 40px;
@@ -250,7 +250,29 @@ section {
   }
 
   .nav-menu a {
-    top: 100px;
+    top: 140px;
+  }
+
+  .menu-icons {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    gap: 20px;
+    position: relative;
+    bottom: -140px;
+    justify-content: center;
+  }
+
+  .menu-icons > a {
+    padding: 0;
+    font-size: 35px;
+  }
+
+  .menu-icons > a:hover {
+    background: none;
+  }
+
+  .menu-icons > a i:hover {
+    color: #666;
   }
 
   .logo {
