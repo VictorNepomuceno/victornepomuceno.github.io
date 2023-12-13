@@ -13,7 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
   /* height: 5000px; */
   transition: background 0.3s;
-  padding-bottom: 3000px;
+  /* padding-bottom: 3000px; */
 }
 
 body.dark {
