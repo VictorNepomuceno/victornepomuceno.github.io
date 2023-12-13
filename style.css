@@ -346,6 +346,14 @@ section {
     height: 17px;
   }
 
+  .container input {
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    /* border-radius: 40px; */
+    right: 0px;
+  }
+
   .header-menu {
     justify-content: space-between;
     padding: 20px;
