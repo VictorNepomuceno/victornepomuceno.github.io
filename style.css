@@ -13,6 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
   /* height: 5000px; */
   transition: background 0.3s;
+  padding-bottom: 3000px;
 }
 
 body.dark {
@@ -198,8 +199,6 @@ section {
 }
 
 .intro_info.dark h1 {
-  font-size: 2.75rem;
-  font-weight: 700;
   color: #fff;
 }
 
@@ -306,7 +305,7 @@ section {
   background: #fff;
   margin-top: 5px;
   position: relative;
-  transition: 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .menu-icons {
@@ -316,6 +315,35 @@ section {
 @media (max-width: 600px) {
   body {
     margin-top: 70px;
+    padding-bottom: 3000px;
+  }
+
+  .container {
+    top: 28px;
+    right: 20px;
+    width: 50px;
+    height: 25px;
+    background-color: #fff;
+  }
+
+  .container .circle {
+    background-color: #333;
+    width: 18px;
+    height: 18px;
+    top: 4px;
+    left: 4px;
+  }
+
+  .container.ativo {
+    background-color: #333;
+  }
+
+  .container.ativo .circle {
+    left: 28px;
+    top: 4px;
+    background-color: #666;
+    width: 17px;
+    height: 17px;
   }
 
   .header-menu {
@@ -332,12 +360,35 @@ section {
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
   }
 
+  .header-menu .logo a {
+    font-size: 25px;
+  }
+
+  .header-menu.dark {
+    background-color: #fff;
+  }
+
+  .header-menu.dark .logo a {
+    color: #333;
+  }
+
+  .header-menu.dark .toggleMenu {
+    border-color: #333;
+  }
+
+  .header-menu.dark .toggleMenu.toggleMenu::after {
+    background-color: #333;
+  }
+  .header-menu.dark .toggleMenu.toggleMenu::before {
+    background-color: #333;
+  }
+
   .mobile-menu {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 100%;
     align-items: center;
-    gap: 240px;
+    gap: 108px;
   }
 
   .nav-menu {
@@ -393,6 +444,10 @@ section {
     color: #666;
   }
 
+  .nav-menu.dark .menu-icons i {
+    color: #333;
+  }
+
   .logo {
     display: flex;
     font-size: 12px;
@@ -412,7 +467,7 @@ section {
 
   .toggleMenu {
     display: block;
-    transition: 0.1s;
+    transition: transform 0.1s;
   }
 
   .toggleNav.active .toggleMenu {
@@ -442,7 +497,7 @@ section {
   .intro_picture img {
     width: 200px;
     height: 200px;
-    margin: 40px 0px 0px 0px;
+    margin: 60px 0px 0px 0px;
     padding: 0;
   }
 
@@ -455,12 +510,18 @@ section {
     padding: 0;
   }
 
+  .intro_info p:first-child {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
   .intro_info .last_p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin-top: 8px;
   }
 
   .intro_info h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
 

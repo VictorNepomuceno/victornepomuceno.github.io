@@ -32,6 +32,7 @@ const logoItem = document.querySelector(".logo");
 const devLinks = document.querySelector(".dev-links");
 const introInfo = document.querySelector(".intro_info");
 const devSocials = document.querySelector(".dev-socials");
+const headerMobile = document.querySelector(".header-menu");
 btn.addEventListener("change", (e) => {
   const listMenu = document.querySelector(".nav-menu");
   document.body.classList.toggle("dark", e.target.checked);
@@ -40,4 +41,5 @@ btn.addEventListener("change", (e) => {
   devLinks.classList.toggle("dark", e.target.checked);
   introInfo.classList.toggle("dark", e.target.checked);
   devSocials.classList.toggle("dark", e.target.checked);
+  headerMobile.classList.toggle("dark", e.target.checked);
 });
