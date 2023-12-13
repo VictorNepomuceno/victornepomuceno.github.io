@@ -316,7 +316,6 @@ section {
 @media (max-width: 600px) {
   body {
     margin-top: 70px;
-    /* padding-bottom: 3000px; */
   }
 
   .container {
@@ -519,12 +518,12 @@ section {
   }
 
   .intro_info .last_p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 8px;
   }
 
   .intro_info h1 {
-    font-size: 2.5rem;
+    font-size: 1.74rem;
     font-weight: 700;
   }
 
@@ -536,6 +535,10 @@ section {
     align-items: center;
     justify-content: center;
   }
+
+  .dev-socials {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -544,7 +547,7 @@ section {
   }
 
   .menu-icons {
-    top: 50px;
+    top: 60px;
   }
 }
 
