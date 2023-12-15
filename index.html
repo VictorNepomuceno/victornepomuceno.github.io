@@ -17,9 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Victor Nepomuceno | Desenvolvedor Frontend</title>
+    <link rel="shortcut icon" href="./assets/code-solid.svg" type="image/x-icon">
+    <title>Victor Nepomuceno | Desenvolvedor Front-end</title>
   </head>
-  <body class="toggleNav">
+    <body class="toggleNav">
     <header class="header-menu">
       <div class="mobile-menu">
         <div class="toggleMenu"></div>
@@ -34,8 +35,8 @@
       </div>
       <nav>
         <ul class="nav-menu">
-          <li><a class="itens-menu" href="#">Início</a></li>
           <li><a class="itens-menu" href="#about">Sobre</a></li>
+          <li><a class="itens-menu" href="#skills">Habilidades</a></li>
           <li><a class="itens-menu" href="#projects">Projetos</a></li>
           <li><a class="itens-menu" href="#contact">Contato</a></li>
             <div class="menu-icons">
@@ -45,15 +46,15 @@
             </div>
         </ul>
       </nav>
-      <div class="mobile_menu">
-    </header>
-
+      </header>
+  <main>
     <section id="profile" >
+      <div><a class="arrow" href="#about"><i class="fa-solid fa-angles-down"></i></a></div>
       <div class="intro_picture"><img src="./assets/logo.jpeg" alt="" /></div>
       <div class="intro_info">
-        <p>Olá! meu nome é</p>
-        <h1>Victor Nepomuceno</h1>
-        <p class="last_p">Desenvolvedor Frontend</p>
+        <p>Olá, meu nome é</p>
+        <h1 class="titleMain">Victor Nepomuceno</h1>
+        <p class="last_p">Desenvolvedor Front-end</p>
         <div class="dev-links">
           <a target="_blank"  href="./assets/resume-example.pdf">Currículo</a>
           <a href="#contact">Contato</a>
@@ -66,6 +67,134 @@
       </div>
     </section>
 
+    <section id="about">
+      <div class="arrowAbout"><a class="arrow" href="#skills"><i class="fa-solid fa-angles-down"></i></a></div>
+     <div class="about-title">
+       <h1 class="titleMain">Sobre mim</h1>
+     </div>
+     <div class="about-info">
+      <img src="./assets/about-image.png" alt="">
+      <div class="about-text">
+        <div class="about-softskills">
+          <div class="experience one"><h3><i class="fa-solid fa-award"></i>Constante aprendizado</h3></div>
+          <div class="experience two">
+          <h3><i class="fa-solid fa-user-group"></i>Trabalho em equipe</h3></div>
+        </div>
+        <p>Me chamo Victor Nepomuceno, tenho 22 anos, e sou um apaixonado desenvolvedor frontend. Desde jovem, minha afinidade com computadores e jogos moldou minha trajetória, conectando-me de forma intrínseca à tecnologia. Acredito na força da colaboração em equipe para solucionar desafios, e meu entusiasmo em ser desenvolvedor reflete-se na busca constante pela excelência na criação de experiências web inovadoras e envolventes.</p>
+    </div>
+     </div>
+    </section>
+
+    <section id="skills">
+      <div class="arrowSkills"><a class="arrow" href="#projects"><i class="fa-solid fa-angles-down"></i></a></div>
+      <div class="skills-title"><h1 class="titleMain">Habilidades</h1></div>
+      <div class="skills-info-container">
+        <div class="skills-box">
+          <div class="skills-info html"><i class="fa-brands fa-html5 skillsIcon"></i><span>HTML5</span></div>
+          <div class="skills-info css"><i class="fa-brands fa-css3-alt skillsIcon"></i><span>CSS3</span></div>
+        </div>
+        <div class="skills-box">
+          <div class="skills-info js"><i class="fa-brands fa-js skillsIcon"></i><span>JavaScript</span></div>
+          <div class="skills-info bootstrap"><i class="fa-brands fa-bootstrap skillsIcon"></i><span>Bootstrap</span></div>
+        </div>
+        <div class="skills-box">
+          <div class="skills-info react"><i class="fa-brands fa-react skillsIcon"></i><span>React.js</span></div>
+          <div class="skills-info vue"><i class="fa-brands fa-vuejs skillsIcon"></i><span>Vue.js</span></div>
+        </div>
+        <div class="skills-box">
+          <div class="skills-info sass"><i class="fa-brands fa-sass skillsIcon"></i><span>Sass</span></div>
+          <div class="skills-info git"><i class="fa-brands fa-git skillsIcon"></i><span>git</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="arrowProjects"><a class="arrow" href="#contact"><i class="fa-solid fa-angles-down"></i></a></div>
+      <div><h1 class="titleMain">Projetos</h1></div>
+      <div class="projects-container">
+        <div class="projects">
+          <h2>Lírios Recepções</h2>
+          <div class="projects-info">
+            <div class="projects-text">
+              <p>Projeto de design, front-end e back-end do site do Lírios Recepções, um salão de recepção localizado em Parnamirim-RN. Esse projeto foi pensado do zero por mim, o site é uma carta de apresentação e galeria do salão com implementação de formulário de contato para que os clientes possam entrar em contato com os atendentes.</p>
+            </div>
+            <div class="projectsTop">
+              <div class="projects-list">
+                <span>Tecnologias Utilizadas</span>
+                <ul class="flex-list">
+                  <li class="flex-list-inside"><i class="fa-brands fa-html5"></i><span>HTML</span></li>
+                  <li class="flex-list-inside"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
+                  <li class="flex-list-inside"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
+                  <li class="flex-list-inside"><i class="fa-brands fa-php"></i><span>PHP</span></li>
+                </ul>
+                <div class="projectsLinks">
+                  <a href="#">Live Demo</a>
+                  <a href="#">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-img"><img src="./assets/liriosImage.jpeg" alt=""></div>
+        <div class="projects">
+          <h2>Bikcraft</h2>
+          <div class="projects-info">
+            <div class="projects-text">
+              <p>Projeto de front-end feito no curso da Origamid. Nesse projeto pude aprender muitos conceitos de CSS e Javascript e aperfeiçoar minhas habilidades nessas tecnologias.</p>
+            </div>
+            <div class="projectsTop">
+              <div class="projects-list">
+                <span>Tecnologias Utilizadas</span>
+                <ul class="flex-list">
+                  <li class="flex-list-inside"><i class="fa-brands fa-html5"></i><span>HTML</span></li>
+                  <li class="flex-list-inside"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
+                  <li class="flex-list-inside"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
+                </ul>
+                <div class="projectsLinks">
+                  <a href="#">Live Demo</a>
+                  <a href="#">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-img"><img src="./assets/liriosImage.jpeg" alt=""></div>
+        <div class="projects">
+          <h2>Animais Fantásticos</h2>
+          <div class="projects-info">
+            <div class="projects-text">
+              <p>Projeto de front-end feito no curso Origamid. Nesse projeto aprendi vários conceitos aprofundados de JavaScript que me deixou bem familiarizado com a tecnologia e me fez me apaixonar por ela.</p>
+            </div>
+            <div class="projectsTop">
+              <div class="projects-list">
+                <span>Tecnologias Utilizadas</span>
+                <ul class="flex-list">
+                  <li class="flex-list-inside"><i class="fa-brands fa-html5"></i><span>HTML</span></li>
+                  <li class="flex-list-inside"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
+                  <li class="flex-list-inside"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
+                </ul>
+                <div class="projectsLinks">
+                  <a href="#">Live Demo</a>
+                  <a href="#">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-img"><img src="./assets/liriosImage.jpeg" alt=""></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="arrowProjects"><a class="arrow" href="#"><i class="fa-solid fa-angles-down"></i></a></div>
+      <h1 class="titleMain">Contato</h1>
+    </section>
+
+    <footer class="footer"><img class="assinaturaBranca" src="./assets/victorSigWhite.png" alt="">
+      <img class="assinaturaEscura" src="./assets/victorSigBlack.png" alt="">
+      <div class="footer-copy"><h3>Copyright, Victor Nepomuceno, todos os direitos reservados.</h3></div>
+    </footer>
+  </main>
     <script src="./main.js"></script>
   </body>
 </html>

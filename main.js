@@ -33,6 +33,13 @@ const devLinks = document.querySelector(".dev-links");
 const introInfo = document.querySelector(".intro_info");
 const devSocials = document.querySelector(".dev-socials");
 const headerMobile = document.querySelector(".header-menu");
+const titleMain = document.querySelectorAll(".titleMain");
+const aboutInfo = document.querySelector(".about-info");
+const arrow = document.querySelectorAll(".arrow");
+const aboutSoft = document.querySelector(".about-softskills");
+const skillsIcons = document.querySelectorAll(".skillsIcon");
+const skillsSpan = document.querySelectorAll(".skills-info span");
+const footer = document.querySelector(".footer");
 btn.addEventListener("change", (e) => {
   const listMenu = document.querySelector(".nav-menu");
   document.body.classList.toggle("dark", e.target.checked);
@@ -42,4 +49,19 @@ btn.addEventListener("change", (e) => {
   introInfo.classList.toggle("dark", e.target.checked);
   devSocials.classList.toggle("dark", e.target.checked);
   headerMobile.classList.toggle("dark", e.target.checked);
+  footer.classList.toggle("dark", e.target.checked);
+  titleMain.forEach((title) => {
+    title.classList.toggle("dark", e.target.checked);
+  });
+  aboutInfo.classList.toggle("dark", e.target.checked);
+  arrow.forEach((arrow) => {
+    arrow.classList.toggle("dark", e.target.checked);
+  });
+  aboutSoft.classList.toggle("dark", e.target.checked);
+  skillsIcons.forEach((icon) => {
+    icon.classList.toggle("dark", e.target.checked);
+  });
+  skillsSpan.forEach((span) => {
+    span.classList.toggle("dark", e.target.checked);
+  });
 });
