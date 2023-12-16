@@ -50,10 +50,10 @@
   <main>
     <section id="profile" >
       <div><a class="arrow" href="#about"><i class="fa-solid fa-angles-down"></i></a></div>
-      <div class="intro_picture"><img src="./assets/logo.jpeg" alt="" /></div>
+      <div class="intro_picture"><a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><img src="./assets/logo.jpeg" alt="" /></a></div>
       <div class="intro_info">
         <p>Olá, meu nome é</p>
-        <h1 class="titleMain">Victor Nepomuceno</h1>
+        <h1 class="titleMain">Victor Nepomuceno</h1>  
         <p class="last_p">Desenvolvedor Front-end</p>
         <div class="dev-links">
           <a target="_blank"  href="./assets/resume-example.pdf">Currículo</a>
@@ -127,7 +127,7 @@
                   <li class="flex-list-inside"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
                   <li class="flex-list-inside"><i class="fa-brands fa-php"></i><span>PHP</span></li>
                 </ul>
-                <div class="projectsLinks">
+                <div class="dev-links">
                   <a href="#">Live Demo</a>
                   <a href="#">Github</a>
                 </div>
@@ -150,8 +150,8 @@
                   <li class="flex-list-inside"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
                   <li class="flex-list-inside"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
                 </ul>
-                <div class="projectsLinks">
-                  <a href="#">Live Demo</a>
+                <div class="dev-links">
+                  <a  href="#">Live Demo</a>
                   <a href="#">Github</a>
                 </div>
               </div>
@@ -173,7 +173,7 @@
                   <li class="flex-list-inside"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
                   <li class="flex-list-inside"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
                 </ul>
-                <div class="projectsLinks">
+                <div class="dev-links projectsLinks">
                   <a href="#">Live Demo</a>
                   <a href="#">Github</a>
                 </div>
@@ -188,12 +188,47 @@
     <section id="contact">
       <div class="arrowProjects"><a class="arrow" href="#"><i class="fa-solid fa-angles-down"></i></a></div>
       <h1 class="titleMain">Contato</h1>
-    </section>
+      <div class="contact-container">
+        <div class="contact-socials">
+          <h2>Onde me encontrar</h2>
+          <div class="dev-socials">
+            <a target="_blank" href="mailto:victornepomucenodev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a target="_blank" href="https://github.com/VictorNepomuceno"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h2>Entre em contato</h2>
+          <form action="#">
+            <div class="form-inside">
+             
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="João" >
+              
+            </div>
+            <div class="form-inside">
+             
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="joao@gmail.com" >
+              
+            </div>
+            <div class="form-inside">
+             
+                <label for="envie">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+              
+            </div>
 
-    <footer class="footer"><img class="assinaturaBranca" src="./assets/victorSigWhite.png" alt="">
-      <img class="assinaturaEscura" src="./assets/victorSigBlack.png" alt="">
-      <div class="footer-copy"><h3>Copyright, Victor Nepomuceno, todos os direitos reservados.</h3></div>
-    </footer>
+            <div>
+              <button type="submit">Enviar Mensagem</button>
+            </div>
+            
+           
+
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
     <script src="./main.js"></script>
   </body>

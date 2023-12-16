@@ -29,7 +29,7 @@ trilho.addEventListener("click", mover);
 
 const btn = document.getElementById("btn");
 const logoItem = document.querySelector(".logo");
-const devLinks = document.querySelector(".dev-links");
+const devLinks = document.querySelectorAll(".dev-links");
 const introInfo = document.querySelector(".intro_info");
 const devSocials = document.querySelector(".dev-socials");
 const headerMobile = document.querySelector(".header-menu");
@@ -39,17 +39,18 @@ const arrow = document.querySelectorAll(".arrow");
 const aboutSoft = document.querySelector(".about-softskills");
 const skillsIcons = document.querySelectorAll(".skillsIcon");
 const skillsSpan = document.querySelectorAll(".skills-info span");
-const footer = document.querySelector(".footer");
 btn.addEventListener("change", (e) => {
   const listMenu = document.querySelector(".nav-menu");
   document.body.classList.toggle("dark", e.target.checked);
   logoItem.classList.toggle("dark", e.target.checked);
   listMenu.classList.toggle("dark", e.target.checked);
-  devLinks.classList.toggle("dark", e.target.checked);
   introInfo.classList.toggle("dark", e.target.checked);
   devSocials.classList.toggle("dark", e.target.checked);
   headerMobile.classList.toggle("dark", e.target.checked);
-  footer.classList.toggle("dark", e.target.checked);
+
+  devLinks.forEach((links) => {
+    links.classList.toggle("dark", e.target.checked);
+  });
   titleMain.forEach((title) => {
     title.classList.toggle("dark", e.target.checked);
   });
