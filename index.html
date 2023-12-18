@@ -18,10 +18,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" href="./assets/code-solid.svg" type="image/x-icon">
-    <title>Victor Nepomuceno | Desenvolvedor Front-end</title>
+    <title>Victor Nepomuceno | Desenvolvedor Front-End</title>
   </head>
     <body class="toggleNav">
-    <header class="header-menu">
+    <header class="header-menu ">
       <div class="mobile-menu">
         <div class="toggleMenu"></div>
         <div class="logo">
@@ -48,18 +48,18 @@
       </nav>
       </header>
   <main>
-    <section id="profile" >
+    <section id="profile" class="hidden" >
       <div><a class="arrow" href="#about"><i class="fa-solid fa-angles-down"></i></a></div>
-      <div class="intro_picture"><a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><img src="./assets/logo.jpeg" alt="" /></a></div>
-      <div class="intro_info">
+      <div class="intro_picture hidden"><a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><img src="./assets/logo.jpeg" alt="" /></a></div>
+      <div class="intro_info hidden">
         <p>Olá, meu nome é</p>
         <h1 class="titleMain">Victor Nepomuceno</h1>  
-        <p class="last_p">Desenvolvedor Front-end</p>
-        <div class="dev-links">
+        <p class="last_p">Desenvolvedor Front-End</p>
+        <div class="dev-links hidden">
           <a target="_blank"  href="./assets/resume-example.pdf">Currículo</a>
           <a href="#contact">Contato</a>
         </div>
-        <div class="dev-socials">
+        <div class="dev-socials hidden from-right">
           <a target="_blank" href="mailto:victornepomucenodev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
           <a target="_blank" href="https://github.com/VictorNepomuceno"><i class="fa-brands fa-github"></i></a>
           <a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><i class="fa-brands fa-linkedin"></i></a>
@@ -67,13 +67,13 @@
       </div>
     </section>
 
-    <section id="about">
-      <div class="arrowAbout"><a class="arrow" href="#skills"><i class="fa-solid fa-angles-down"></i></a></div>
-     <div class="about-title">
+    <section id="about" class="">
+      <div class="arrowAbout "><a class="arrow" href="#skills"><i class="fa-solid fa-angles-down hidden from-left"></i></a></div>
+     <div class="about-title hidden from-left">
        <h1 class="titleMain">Sobre mim</h1>
      </div>
-     <div class="about-info">
-      <img src="./assets/about-image.png" alt="">
+     <div class="about-info hidden from-left">
+      <img src="./assets/about-victor.jpeg" alt="">
       <div class="about-text">
         <div class="about-softskills">
           <div class="experience one"><h3><i class="fa-solid fa-award"></i>Constante aprendizado</h3></div>
@@ -85,7 +85,7 @@
      </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="hidden from-left">
       <div class="arrowSkills"><a class="arrow" href="#projects"><i class="fa-solid fa-angles-down"></i></a></div>
       <div class="skills-title"><h1 class="titleMain">Habilidades</h1></div>
       <div class="skills-info-container">
@@ -110,9 +110,9 @@
 
     <section id="projects">
       <div class="arrowProjects"><a class="arrow" href="#contact"><i class="fa-solid fa-angles-down"></i></a></div>
-      <div><h1 class="titleMain">Projetos</h1></div>
+      <div class="hidden from-left"><h1 class="titleMain">Projetos</h1></div>
       <div class="projects-container">
-        <div class="projects">
+        <div class="projects hidden">
           <h2>Lírios Recepções</h2>
           <div class="projects-info">
             <div class="projects-text">
@@ -135,8 +135,8 @@
             </div>
           </div>
         </div>
-        <div class="projects-img"><img src="./assets/liriosImage.jpeg" alt=""></div>
-        <div class="projects">
+        <div class="projects-img hidden from-right"><img src="./assets/liriosImage.jpeg" alt=""></div>
+        <div class="projects hidden">
           <h2>Bikcraft</h2>
           <div class="projects-info">
             <div class="projects-text">
@@ -158,8 +158,8 @@
             </div>
           </div>
         </div>
-        <div class="projects-img"><img src="./assets/liriosImage.jpeg" alt=""></div>
-        <div class="projects">
+        <div class="projects-img hidden from-right"><img src="./assets/liriosImage.jpeg" alt=""></div>
+        <div class="projects hidden">
           <h2>Animais Fantásticos</h2>
           <div class="projects-info">
             <div class="projects-text">
@@ -181,45 +181,52 @@
             </div>
           </div>
         </div>
-        <div class="projects-img"><img src="./assets/liriosImage.jpeg" alt=""></div>
+        <div class="projects-img hidden from-right"><img src="./assets/liriosImage.jpeg" alt=""></div>
       </div>
     </section>
-
-    <section id="contact">
+    <section id="contact" class="hidden from-left">
       <div class="arrowProjects"><a class="arrow" href="#"><i class="fa-solid fa-angles-down"></i></a></div>
-      <h1 class="titleMain">Contato</h1>
+      <h1 class="titleMain">Entre em contato</h1>
       <div class="contact-container">
         <div class="contact-socials">
-          <h2>Onde me encontrar</h2>
           <div class="dev-socials">
-            <a target="_blank" href="mailto:victornepomucenodev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a target="_blank" href="https://github.com/VictorNepomuceno"><i class="fa-brands fa-github"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><i class="fa-brands fa-linkedin"></i></a>
+            <div class="dev-socials-text">
+              <a target="_blank" href="mailto:victornepomucenodev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              <span>Email</span>
+            </div>
+            <div class="dev-socials-text">
+              <a target="_blank" href="https://github.com/VictorNepomuceno"><i class="fa-brands fa-github"></i></a>
+              <span>Github</span>
+            </div>
+            <div class="dev-socials-text">
+              <a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><i class="fa-brands fa-linkedin"></i></a>
+              <span>Linkedin</span>
+            </div>
           </div>
         </div>
         <div class="contact-form">
-          <h2>Entre em contato</h2>
           <form action="#">
-            <div class="form-inside">
+            <div class="form-insideone">
              
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="João" >
-              
-            </div>
-            <div class="form-inside">
-             
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="joao@gmail.com" >
+                <div class="inside">
+                  <label for="nome">Nome</label>
+                  <input class="firstInput" type="text" name="nome" id="nome" placeholder="João" required>
+                </div>
+                <div class="inside">
+  
+                  <label for="email">Email</label>
+                  <input class="secondInput" type="email" name="email" id="email" placeholder="joao@gmail.com" required>
+                </div>
               
             </div>
             <div class="form-inside">
              
                 <label for="envie">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="7" placeholder="Digite aqui sua mensagem..." required></textarea>
               
             </div>
 
-            <div>
+            <div class="button">
               <button type="submit">Enviar Mensagem</button>
             </div>
             
@@ -228,6 +235,7 @@
           </form>
         </div>
       </div>
+      <div class="copy"><span><i class="fa-solid fa-copyright"></i>Copyright, Victor Nepomuceno. Todos os direitos reservados.</span></div>
     </section>
   </main>
     <script src="./main.js"></script>
