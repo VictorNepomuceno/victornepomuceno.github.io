@@ -22,11 +22,12 @@ body {
   transition: background 0.3s;
   /* padding-bottom: 3000px; */
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 body.dark {
@@ -43,7 +44,6 @@ p {
 }
 
 section {
-  box-sizing: border-box;
   min-height: fit-content;
   justify-content: center;
   align-items: center;
