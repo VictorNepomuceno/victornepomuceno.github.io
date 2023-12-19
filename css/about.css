@@ -1,0 +1,118 @@
+.about-title .titleMain {
+  margin-bottom: 10px;
+}
+
+.about-title.dark .titleMain {
+  color: #fff;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10rem 8rem;
+  position: relative;
+}
+
+#about .arrow i,
+#skills .arrow i {
+  left: -40px;
+  bottom: 120px;
+}
+
+.about-info {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.about-info img {
+  width: 400px;
+  /* background: #333; */
+  height: 400px;
+  border-radius: 30px;
+  margin-top: -25px;
+  animation: imageAnimation 5s infinite;
+  transition: all 0.3s;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+}
+
+.about-softskills {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+.about-softskills .experience {
+  outline: black solid 1px;
+  padding: 10px 5px;
+  border-radius: 40px;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* flex-direction: column; */
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.experience h3 {
+  position: relative;
+  color: #222;
+  margin-left: 30px;
+}
+
+.experience i {
+  font-size: 30px;
+  position: absolute;
+  left: -33px;
+  top: -2px;
+  color: #333;
+}
+
+.experience.two i {
+  font-size: 25px;
+  top: 0;
+  left: -45px;
+}
+
+.about-info.dark p {
+  color: #fff;
+}
+
+.about-info img {
+  background-color: #222;
+}
+
+.about-info.dark img {
+  background-color: #fff;
+}
+
+.about-softskills.dark i {
+  color: #f4f4f4;
+}
+
+.about-softskills.dark h3 {
+  color: #fff;
+}
+
+.about-softskills.dark .experience {
+  outline-color: #fff;
+}

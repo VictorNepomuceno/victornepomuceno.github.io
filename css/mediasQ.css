@@ -1,0 +1,244 @@
+@media (max-width: 600px) {
+  body {
+    margin-top: 70px;
+  }
+
+  .container {
+    top: 28px;
+    right: 20px;
+    width: 50px;
+    height: 25px;
+    background-color: #fff;
+  }
+
+  .container .circle {
+    background-color: #333;
+    width: 18px;
+    height: 18px;
+    top: 4px;
+    left: 4px;
+  }
+
+  .container.ativo {
+    background-color: #333;
+  }
+
+  .container.ativo .circle {
+    left: 28px;
+    top: 4px;
+    background-color: #666;
+    width: 17px;
+    height: 17px;
+  }
+
+  .container input {
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    /* border-radius: 40px; */
+    right: 0px;
+  }
+
+  .header-menu {
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    /* max-width: 100%; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .header-menu .logo a {
+    font-size: 25px;
+  }
+
+  .header-menu.dark {
+    background-color: #fff;
+  }
+
+  .header-menu.dark .logo a {
+    color: #333;
+  }
+
+  .header-menu.dark .toggleMenu {
+    border-color: #333;
+  }
+
+  .header-menu.dark .toggleMenu.toggleMenu::after {
+    background-color: #333;
+  }
+  .header-menu.dark .toggleMenu.toggleMenu::before {
+    background-color: #333;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-menu {
+    visibility: visible;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 0px 0px;
+    top: 70px;
+    left: 0px;
+    gap: 40px;
+    z-index: 1;
+    transition: 0.6s;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    text-align: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    width: 0px;
+    justify-content: start;
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-menu a {
+    top: 60px;
+    display: flex;
+    /* gap: 50px; */
+  }
+
+  .menu-icons {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    gap: 20px;
+    position: relative;
+    bottom: -130px;
+    justify-content: center;
+  }
+
+  .menu-icons > a {
+    padding: 0;
+    font-size: 35px;
+  }
+
+  .menu-icons > a:hover {
+    background: none;
+  }
+
+  .menu-icons > a i:hover {
+    color: #666;
+  }
+
+  .nav-menu.dark .menu-icons i {
+    color: #333;
+  }
+
+  .logo {
+    display: flex;
+    font-size: 12px;
+
+    margin: 0;
+    margin-right: 3px;
+  }
+
+  .logo a {
+    /* padding: 0 30px; */
+    font-size: 1.25rem;
+    display: block;
+    white-space: nowrap;
+    /* width: 100%; */
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .toggleMenu {
+    left: 20px;
+    display: block;
+    transition: transform 0.1s;
+  }
+
+  .toggleNav.active .toggleMenu {
+    border-top-color: transparent;
+  }
+
+  .toggleNav.active .toggleMenu::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .toggleNav.active .toggleMenu::before {
+    transform: rotate(135deg);
+  }
+
+  .nav-menu.active {
+    visibility: visible;
+    width: 40%;
+  }
+
+  #profile {
+    gap: 30px;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .intro_picture img {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0px 0px 0px;
+    padding: 0;
+  }
+
+  .intro_info {
+    display: grid;
+    gap: 5px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .intro_info p:first-child {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .intro_info .last_p {
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+
+  .intro_info h1 {
+    font-size: 1.74rem;
+    font-weight: 700;
+  }
+
+  .dev-links {
+    margin-top: 32px;
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dev-socials {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-icons > a {
+    font-size: 30px;
+  }
+
+  .menu-icons {
+    top: 60px;
+  }
+}

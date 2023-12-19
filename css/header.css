@@ -1,0 +1,81 @@
+.header-menu,
+.nav-menu {
+  display: flex;
+}
+
+.header-menu {
+  justify-content: space-around;
+  padding: 20px 0px 0px 0px;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -20px;
+}
+
+.logo {
+  cursor: default;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  /* display: none; */
+}
+
+.logo a {
+  color: #333;
+  font-weight: 500;
+}
+
+.logo.dark .itens-menu {
+  color: #fff;
+}
+
+.nav-menu {
+  gap: 25px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  border-radius: 40px;
+  background: #333;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 20px 25px;
+  align-items: center;
+}
+
+.nav-menu.dark {
+  background: #fff;
+}
+
+.nav-menu a {
+  padding: 8px 45px;
+  color: #fff;
+  transition: 0.2s;
+  position: relative;
+  border-radius: 40px;
+  position: relative;
+  font-weight: 500;
+}
+
+.nav-menu.dark .itens-menu {
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-menu.dark .itens-menu:hover {
+  background: #d3d3d3;
+}
+
+.nav-menu a:hover {
+  background: #666;
+}
+
+.nav-menu a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  /* display: block; */
+  position: absolute;
+  transition: 0.3s;
+  display: none;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}

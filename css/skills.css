@@ -1,0 +1,99 @@
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10rem 8rem;
+  position: relative;
+}
+
+.skills-info-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 72px;
+  gap: 170px;
+  height: 50vh;
+}
+
+.skills-box {
+  display: grid;
+  gap: 75px;
+  align-items: center;
+  position: relative;
+}
+
+.skillsIcon.dark {
+  color: #fff;
+}
+
+.skills-info span.dark {
+  color: #fff;
+}
+
+.skills-info {
+  display: grid;
+  text-align: center;
+  gap: 10px;
+}
+
+.skills-info i {
+  font-size: 80px;
+  /* cursor: pointer; */
+  color: #333;
+  transition: 0.2s;
+}
+
+.html,
+.css,
+.react,
+.js,
+.vue,
+.git,
+.bootstrap,
+.sass {
+  transition: 0.2s;
+}
+
+.html:hover,
+.css:hover,
+.react:hover,
+.js:hover,
+.vue:hover,
+.git:hover,
+.bootstrap:hover,
+.sass:hover {
+  transform: scale(1.05);
+}
+
+.html i:hover {
+  color: #f06529;
+}
+.css i:hover {
+  color: #2565ae;
+}
+.react i:hover {
+  color: #61dbfb;
+}
+.js i:hover {
+  color: #f0db4f;
+}
+.vue i:hover {
+  color: #42b883;
+}
+.git i:hover {
+  color: #f1502f;
+}
+.sass i:hover {
+  color: #cd6799;
+}
+.bootstrap i:hover {
+  color: #553c7b;
+}
+
+.skills-info span {
+  font-size: 16px;
+  /* display: none; */
+  font-weight: 500;
+  color: #333;
+}

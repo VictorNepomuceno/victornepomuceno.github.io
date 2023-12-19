@@ -1,0 +1,134 @@
+#profile .arrow i {
+  left: -52px;
+  bottom: 100px;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 10rem 10rem;
+  position: relative;
+}
+
+.intro_picture img {
+  width: 385px;
+  height: 385px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.intro_picture img:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.intro_info {
+  display: grid;
+  gap: 12px;
+  text-align: center;
+  grid-template-columns: 1fr;
+}
+
+.intro_info .last_p {
+  font-size: 1.75rem;
+}
+
+.intro_info.dark p {
+  color: #e1e1e1;
+}
+
+.dev-links {
+  margin-top: 32px;
+  display: flex;
+  gap: 45px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev-links a {
+  padding: 15px 30px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.dev-links a:first-child {
+  outline: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.dev-links a:first-child:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+}
+
+.dev-links a:last-child {
+  outline: 1px solid #333;
+  background: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.dev-links a:last-child:hover {
+  background: #555;
+  transform: scale(1.05);
+}
+
+.dev-links.dark a:first-child {
+  background: #22222276;
+  outline: 1px solid #f1f1f1;
+  transition: all 0.3s ease;
+  color: #fff;
+  /* box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.2); */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dev-links.dark a:first-child:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+.dev-links.dark a:last-child {
+  outline: 1px solid #666;
+  background: #fff;
+  color: #111;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dev-links.dark a:last-child:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+  color: #111;
+}
+
+.dev-socials {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.dev-socials i {
+  font-size: 32px;
+  transition: all 0.3s;
+  color: #333;
+}
+
+.dev-socials.dark i {
+  color: #fff;
+}
+
+.dev-socials i:hover {
+  transform: scale(1.05);
+  color: #777;
+}
+
+.menu-icons {
+  display: none;
+}

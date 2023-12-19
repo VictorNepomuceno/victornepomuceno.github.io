@@ -1,0 +1,131 @@
+#projects {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  margin: 10rem 8rem;
+  position: relative;
+}
+
+#projects .arrow i {
+  left: -90px;
+  bottom: 385px;
+  display: none;
+}
+
+#projects h1 {
+  margin-top: 90px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 600px auto;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-img img {
+  margin-top: 150px;
+  width: 100%;
+}
+
+.projects {
+  margin-top: 150px;
+  position: relative;
+}
+
+.projects.dark h2 {
+  color: #ffff;
+}
+.projects.dark p {
+  color: #ffff;
+}
+
+.projects.dark span {
+  color: #f2f2f2;
+}
+.projects.dark i {
+  color: #f2f2f2;
+}
+
+/* .projects::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1200px;
+  height: 1px;
+  opacity: 0.2;
+  background: #333;
+  bottom: -100px;
+}
+
+.projects-container.dark .projects::after {
+  background: #999;
+} */
+
+.projects-container p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 36px;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  text-align: center;
+  justify-content: start;
+  /* align-items: center; */
+}
+
+.projects-list > span {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.projects-list .dev-links {
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  padding: 0;
+}
+
+.projects-list .dev-links a {
+  padding: 10px 20px;
+  margin: 0;
+  width: 130px;
+}
+
+.flex-list {
+  display: flex;
+  /* gap: 20px; */
+  align-items: center;
+  margin-bottom: 26px;
+  margin-top: 20px;
+  text-align: start;
+  justify-content: space-around;
+}
+.flex-list-inside {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 8px;
+  align-items: center;
+  font-size: 16px;
+  color: #444;
+}
+
+.projects-text p {
+  font-size: 15px;
+}

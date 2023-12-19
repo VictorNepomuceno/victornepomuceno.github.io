@@ -1,0 +1,117 @@
+#contact .arrow i {
+  bottom: -100px;
+  transform: rotate(180deg);
+  right: -32px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem 8rem;
+  position: relative;
+  /* width: 100%; */
+  align-items: center;
+}
+
+#contact .titleMain {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: auto 7fr;
+  margin-top: 70px;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+.contact-container h2 {
+  margin-bottom: 40px;
+  color: #666;
+  text-align: center;
+}
+
+.contact-socials .dev-socials {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-socials .dev-socials .dev-socials-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.3s;
+}
+.dev-socials-text span {
+  color: #333;
+  font-weight: 500;
+}
+.contact-socials .dev-socials i {
+  font-size: 50px;
+}
+.contact-socials .dev-socials i:hover {
+  transform: none;
+}
+.contact-socials .dev-socials-text:hover {
+  transform: scale(1.05);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inside {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-insideone {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.inside {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.firstInput {
+  width: 200px;
+}
+
+.button {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.copy {
+  align-self: center;
+  position: relative;
+  bottom: -130px;
+  font-size: 13px;
+  left: -490px;
+  color: #444;
+  opacity: 0.7;
+}
+
+.copy span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#contact span.dark {
+  color: #fff;
+}
