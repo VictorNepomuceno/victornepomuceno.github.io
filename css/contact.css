@@ -5,9 +5,9 @@
 }
 
 #contact {
+  margin-top: 230px;
   display: flex;
   flex-direction: column;
-  margin: 10rem 8rem;
   position: relative;
   /* width: 100%; */
   align-items: center;

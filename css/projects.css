@@ -1,9 +1,9 @@
 #projects {
+  margin-top: 0px;
   display: flex;
   align-items: center;
   /* justify-content: center; */
   flex-direction: column;
-  margin: 10rem 8rem;
   position: relative;
 }
 
@@ -27,7 +27,7 @@
 
 .projects-img img {
   margin-top: 150px;
-  width: 100%;
+  width: 600px;
 }
 
 .projects {

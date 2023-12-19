@@ -7,11 +7,12 @@
 }
 
 #about {
+  margin-top: -60px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 10rem 8rem;
   position: relative;
 }
 

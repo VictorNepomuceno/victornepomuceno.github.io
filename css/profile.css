@@ -4,11 +4,12 @@
 }
 
 #profile {
+  margin-top: -60px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin: 10rem 10rem;
   position: relative;
 }
 
