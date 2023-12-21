@@ -36,8 +36,6 @@
 .container.ativo .circle {
   left: 45px;
   background-color: #333;
-  height: 21px;
-  width: 21px;
 }
 
 .titleMain {
@@ -54,6 +52,7 @@
   display: none;
   cursor: pointer;
   position: absolute;
+  z-index: 999;
 }
 
 .toggleMenu::after,
@@ -123,4 +122,68 @@
 
 #profile .show:nth-child(2) {
   transition-delay: 0.35s;
+}
+
+@media (max-width: 600px) {
+  .titleMain {
+    font-size: 1.75rem;
+  }
+  .container {
+    background-color: #fff;
+    top: 34px;
+    right: 15px;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+  }
+
+  .container .circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #333;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    transition: 0.3s;
+  }
+
+  .container.ativo {
+    background-color: #333;
+  }
+
+  .container.ativo .circle {
+    left: 29px;
+    width: 16px;
+    height: 16px;
+    background-color: #666;
+  }
+
+  .toggleMenu {
+    left: 25px;
+    top: 36.5px;
+    display: block;
+  }
+
+  .toggleNav.active .toggleMenu {
+    border-top: 0px;
+  }
+  .toggleNav.active .toggleMenu::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .toggleNav.active .toggleMenu::before {
+    transform: rotate(135deg);
+  }
+
+  .header-menu.dark .toggleMenu {
+    border-color: #333;
+  }
+
+  .header-menu.dark .toggleMenu::after {
+    background-color: #333;
+  }
+  .header-menu.dark .toggleMenu::before {
+    background-color: #333;
+  }
 }
