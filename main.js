@@ -98,3 +98,18 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((element) => {
   mybObserver.observe(element);
 });
+
+const imagemUm = document.querySelector(".projects-img");
+
+function abrirModal() {
+  const janelaModal = document.querySelector(".janelamodal");
+  janelaModal.classList.add("abrir");
+
+  janelaModal.addEventListener("click", (e) => {
+    if (e.target.id == "fechar" || e.target.id == "janelamodal") {
+      janelaModal.classList.remove("abrir");
+    }
+  });
+}
+
+imagemUm.addEventListener("click", abrirModal);

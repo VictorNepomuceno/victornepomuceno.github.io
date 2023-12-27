@@ -117,3 +117,18 @@
 .about-softskills.dark .experience {
   outline-color: #fff;
 }
+
+@media (max-width: 600px) {
+  #about .arrow i {
+    display: none;
+  }
+
+  #about {
+    margin-top: 0;
+    display: none;
+  }
+
+  .about-info img {
+    display: none;
+  }
+}

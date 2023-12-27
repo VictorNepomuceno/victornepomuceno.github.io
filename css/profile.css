@@ -133,15 +133,16 @@
 
 @media (max-width: 600px) {
   #profile .arrow i {
-    left: 128px;
-    bottom: -100px;
+    left: 2px;
+    bottom: 0px;
     font-size: 35px;
+    position: relative;
   }
 
   #profile {
     height: max-content;
     flex-direction: column;
-    margin: 4rem 0px 0px 0px;
+    margin: 5rem 0px 0px 0px;
     justify-content: start;
   }
 
@@ -167,4 +168,8 @@
   .dev-links a {
     padding: 10px 20px;
   }
+
+  /* .dev-socials {
+    margin-bottom: 10rem;
+  } */
 }

@@ -96,6 +96,20 @@
   display: flex;
 }
 
+.button > button {
+  background-color: #333;
+  transition: all 0.3s ease;
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
 .copy {
   align-self: center;
   position: relative;
