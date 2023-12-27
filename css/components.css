@@ -207,6 +207,7 @@
   align-items: center;
   justify-content: center;
   display: none;
+  overflow-y: hidden;
 }
 
 @keyframes modalAnimation {
@@ -221,49 +222,24 @@
   }
 }
 
-.modal {
-  width: 800px;
-  height: 400px;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  margin: 0 auto;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
-  position: relative;
-  border-radius: 40px 40px 0px 0px;
-  z-index: 2;
-  animation: modalAnimation 0.5s;
-}
-
-.slides {
-  width: 400%;
-  height: 400px;
-  display: flex;
-  gap: 0px;
-}
-
-.slide {
-  width: 25%;
-  position: relative;
-}
-
-.slide img {
-  width: 800px;
-}
-
 .fechar {
   animation: modalAnimation 0.5s;
   position: absolute;
-  top: 240px;
-  right: 390px;
-  width: 45px;
-  height: 45px;
+  top: 55px;
+  right: 80px;
+  width: 100px;
+  height: 50px;
   border: none;
+  outline: none;
+  font-weight: 500;
   background-color: #333;
-  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
   font-size: 18px;
   z-index: 999;
+  font-family: "Poppins", sans-serif;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
@@ -271,87 +247,97 @@
   display: flex;
 }
 
-.slides input {
-  display: none;
+.project-img {
+  width: 1300px;
+  /* height: max-content; */
 }
 
-.manual-navigation {
+.project-img img {
+  border-radius: 25px;
+  margin: 70px 0px;
+  /* border-radius: 70px; */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.swiper {
   animation: modalAnimation 0.5s;
-  position: absolute;
-  width: 800px;
-  bottom: 180px;
+  height: max-content;
+  width: 90%;
   display: flex;
+  position: relative;
   justify-content: center;
-  gap: 15px;
-  background: #33333376;
-  padding: 30px;
-  border-radius: 0px 0px 40px 40px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  align-items: center;
 }
 
-.manual-navigation input {
-  display: none;
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.manual-btn {
-  border: 3px solid #fff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.2s;
+.swiper-pagination-bullet {
+  background-color: rgb(21, 21, 21);
 }
 
-.manual-btn:hover {
+.swiper.dark .swiper-pagination-bullet {
+  background-color: #f1f1f1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #333;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333;
+}
+
+.swiper.dark .swiper-pagination-bullet-active {
   background-color: #fff;
 }
 
-#radio1:checked {
-  background-color: #fff;
+.swiper.dark .swiper-button-next {
+  color: #fff;
+}
+.swiper.dark .swiper-button-prev {
+  color: #fff;
 }
 
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-#radio2:checked ~ .first {
-  margin-left: -25%;
-}
-#radio3:checked ~ .first {
-  margin-left: -50%;
-}
-#radio4:checked ~ .first {
-  margin-left: -75%;
-}
-
-.navigation-auto div {
-  border: 3px solid white;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.2s;
-  z-index: 99999;
-}
-
-.navigation-auto {
+.bikcraftmodal {
   position: fixed;
-  width: 800px;
-  top: 0px;
-  gap: 15px;
-  display: flex;
+  background: #33333335;
+  backdrop-filter: blur(8px);
+  top: 50%;
+  left: 50%;
+  z-index: 5000000;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
   justify-content: center;
-  z-index: 99999999;
   display: none;
+  overflow-y: hidden;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-  background-color: #000;
+.bikcraftmodal.abrir {
+  display: flex;
 }
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-  background-color: #000;
+.animaismodal {
+  position: fixed;
+  background: #33333335;
+  backdrop-filter: blur(8px);
+  top: 50%;
+  left: 50%;
+  z-index: 5000000;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  overflow-y: hidden;
 }
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-  background-color: #000;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-  background-color: #000;
+
+.animaismodal.abrir {
+  display: flex;
 }

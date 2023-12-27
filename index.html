@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -159,7 +163,7 @@
             </div>
           </div>
         </div>
-        <div class="projects-img hidden from-right"><img src="./assets/imagemBikcraft.jpeg" alt=""><i class="fa-solid fa-eye"></i></div>
+        <div class="projects-img hidden from-right bikcraft"><img src="./assets/imagemBikcraft.jpeg" alt=""><i class="fa-solid fa-eye"></i></div>
         <div class="projects hidden">
           <h2>Animais Fantásticos</h2>
           <div class="projects-info">
@@ -182,7 +186,7 @@
             </div>
           </div>
         </div>
-        <div class="projects-img hidden from-right"><img src="./assets/imagemAnimais.jpeg" alt=""><i class="fa-solid fa-eye"></i></div>
+        <div class="projects-img hidden from-right animais"><img src="./assets/imagemAnimais.jpeg" alt=""><i class="fa-solid fa-eye"></i></div>
       </div>
     </section>
     <section id="contact" class="hidden from-left">
@@ -241,33 +245,77 @@
   </main>
   <div class="janelamodal" id="janelamodal">
 
-    <button class="fechar" id="fechar">X</button>
-    <div class="modal">
-      
-      <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <div class="slide first"><img src="./assets/liriosImage.jpeg" alt=""></div>
-        <div class="slide"><img src="./assets/imagem1.jpeg" alt=""></div>
-        <div class="slide"><img src="./assets/imagem2.jpeg" alt=""></div>
-        <div class="slide"><img src="./assets/imagem3.jpeg" alt=""></div>
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-        </div>
-      </div>
-    </div>
-    <div class="manual-navigation">
-      <label class="manual-btn one" for="radio1"></label>
-      <label class="manual-btn second" for="radio2"></label>
-      <label class="manual-btn third" for="radio3"></label>
-      <label class="manual-btn four" for="radio4"></label>
-    </div>
+    
+    <div class="swiper">
+  <button class="fechar" id="fechar">Fechar</button>
+  
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem1.jpeg" alt=""></div></div>
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem2.jpeg" alt=""></div></div>
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem3.jpeg" alt=""></div></div>
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem4.jpeg" alt=""></div></div>
+    
   </div>
+  
+  <div class="swiper-pagination"></div>
+
+  
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
+  </div>
+  <div class="bikcraftmodal" id="bikcraftmodal">
+
+    
+    <div class="swiper">
+  <button class="fechar" id="fechar">Fechar</button>
+  
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem1.jpeg" alt=""></div></div>
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem2.jpeg" alt=""></div></div>
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem3.jpeg" alt=""></div></div>
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem4.jpeg" alt=""></div></div>
+    
+  </div>
+  
+  <div class="swiper-pagination"></div>
+
+  
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
+  </div>
+  <div class="animaismodal" id="animaismodal">
+
+    
+    <div class="swiper">
+  <button class="fechar" id="fechar">Fechar</button>
+  
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem1.jpeg" alt=""></div></div>
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem2.jpeg" alt=""></div></div>
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem3.jpeg" alt=""></div></div>
+    <div class="swiper-slide"><div class="project-img"><img src="./assets/imagem4.jpeg" alt=""></div></div>
+    
+  </div>
+  
+  <div class="swiper-pagination"></div>
+
+  
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
+  </div>
+     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
       <script src="./main.js"></script>
   </body>
 </html>

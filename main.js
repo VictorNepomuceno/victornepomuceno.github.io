@@ -28,6 +28,7 @@ function mover() {
 trilho.addEventListener("click", mover);
 
 const btn = document.getElementById("btn");
+const swiperDark = document.querySelector(".swiper");
 const logoItem = document.querySelector(".logo");
 const devLinks = document.querySelectorAll(".dev-links");
 const introInfo = document.querySelector(".intro_info");
@@ -47,6 +48,7 @@ const projectsAfter = document.querySelector(".projects-container");
 btn.addEventListener("change", (e) => {
   const listMenu = document.querySelector(".nav-menu");
   document.body.classList.toggle("dark", e.target.checked);
+  swiperDark.classList.toggle("dark", e.target.checked);
   logoItem.classList.toggle("dark", e.target.checked);
   listMenu.classList.toggle("dark", e.target.checked);
   introInfo.classList.toggle("dark", e.target.checked);
@@ -111,5 +113,61 @@ function abrirModal() {
     }
   });
 }
-
 imagemUm.addEventListener("click", abrirModal);
+
+const imagemDois = document.querySelector(".bikcraft");
+
+function abrirModalBik() {
+  const bikcraftModal = document.querySelector(".bikcraftmodal");
+  bikcraftModal.classList.add("abrir");
+
+  bikcraftModal.addEventListener("click", (e) => {
+    if (e.target.id == "fechar" || e.target.id == "bikcraftmodal") {
+      bikcraftModal.classList.remove("abrir");
+    }
+  });
+}
+imagemDois.addEventListener("click", abrirModalBik);
+
+const imagemTres = document.querySelector(".animais");
+
+function abrirModalAnimais() {
+  const animaisModal = document.querySelector(".animaismodal");
+  animaisModal.classList.add("abrir");
+
+  animaisModal.addEventListener("click", (e) => {
+    if (e.target.id == "fechar" || e.target.id == "animaismodal") {
+      animaisModal.classList.remove("abrir");
+    }
+  });
+}
+imagemTres.addEventListener("click", abrirModalAnimais);
+
+var swiper = new Swiper(".swiper", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 20,
+    modifier: 1,
+    slideShadows: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  keyboard: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    waitForTransition: false,
+  },
+});
