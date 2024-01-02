@@ -14,6 +14,20 @@
   z-index: 0;
 }
 
+@keyframes coolAnimation {
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .intro_picture img {
   width: 385px;
   height: 385px;
@@ -21,6 +35,7 @@
   object-fit: cover;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
+  animation: coolAnimation 2s;
 }
 
 .intro_picture img:hover {
