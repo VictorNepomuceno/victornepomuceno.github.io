@@ -38,6 +38,10 @@
   gap: 10px;
 }
 
+.skills-info img {
+  width: 80px;
+}
+
 .skills-info i {
   font-size: 80px;
   /* cursor: pointer; */
@@ -49,7 +53,7 @@
 .css,
 .react,
 .js,
-.vue,
+.redux,
 .git,
 .bootstrap,
 .sass {
@@ -60,7 +64,7 @@
 .css:hover,
 .react:hover,
 .js:hover,
-.vue:hover,
+.redux:hover,
 .git:hover,
 .bootstrap:hover,
 .sass:hover {
@@ -79,9 +83,9 @@
 .js i:hover {
   color: #f0db4f;
 }
-.vue i:hover {
+/* .vue i:hover {
   color: #42b883;
-}
+} */
 .git i:hover {
   color: #f1502f;
 }

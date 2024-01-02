@@ -66,20 +66,21 @@
   color: #f2f2f2;
 }
 
-/* .projects::after {
+.projects::after {
   content: "";
   display: block;
   position: absolute;
-  width: 1200px;
+  width: 1170px;
   height: 1px;
   opacity: 0.2;
   background: #333;
   bottom: -100px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
 }
 
 .projects-container.dark .projects::after {
   background: #999;
-} */
+}
 
 .projects-container p {
   font-size: 15px;

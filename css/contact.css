@@ -110,6 +110,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+.button.dark .btn {
+  background-color: #fff;
+  color: #333;
+  outline: #222;
+}
 .copy {
   align-self: center;
   position: relative;

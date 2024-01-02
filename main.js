@@ -42,7 +42,7 @@ const skillsIcons = document.querySelectorAll(".skillsIcon");
 const skillsSpan = document.querySelectorAll(".skills-info span");
 const contactSpan = document.querySelectorAll("#contact span");
 const formLabels = document.querySelectorAll("label");
-const formButton = document.querySelectorAll("button");
+const formButton = document.querySelector(".button");
 const projects = document.querySelectorAll(".projects");
 const projectsAfter = document.querySelector(".projects-container");
 btn.addEventListener("change", (e) => {
@@ -54,6 +54,7 @@ btn.addEventListener("change", (e) => {
   introInfo.classList.toggle("dark", e.target.checked);
   headerMobile.classList.toggle("dark", e.target.checked);
   projectsAfter.classList.toggle("dark", e.target.checked);
+  formButton.classList.toggle("dark", e.target.checked);
   projects.forEach((projects) => {
     projects.classList.toggle("dark", e.target.checked);
   });
@@ -83,9 +84,6 @@ btn.addEventListener("change", (e) => {
   });
   formLabels.forEach((label) => {
     label.classList.toggle("dark", e.target.checked);
-  });
-  formButton.forEach((button) => {
-    button.classList.toggle("dark", e.target.checked);
   });
 });
 
@@ -192,8 +190,4 @@ var swiper = new Swiper(".swiper", {
     clickable: true,
   },
   keyboard: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
 });
