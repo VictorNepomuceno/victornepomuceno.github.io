@@ -25,7 +25,9 @@
   align-items: center;
   justify-content: center;
   gap: 150px;
+  padding: 10px 80px 40px 50px;
 }
+
 .contact-container h2 {
   margin-bottom: 40px;
   color: #666;
@@ -118,9 +120,9 @@
 .copy {
   align-self: center;
   position: relative;
-  bottom: -130px;
+  bottom: -140px;
   font-size: 13px;
-  left: -490px;
+  left: -600px;
   color: #444;
   opacity: 0.7;
 }
@@ -129,6 +131,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  padding-bottom: 5px;
 }
 
 #contact span.dark {

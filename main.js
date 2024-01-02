@@ -15,9 +15,21 @@ function menuAtivo(event) {
     }
   };
 }
+function fecharMenuAoClicarLink(e) {
+  const link = e.target;
+  if (link.tagName === "A") {
+    const listMenu = document.querySelector(".nav-menu");
+    const navMenu = document.querySelector(".toggleNav");
+    navMenu.classList.remove("active");
+    listMenu.classList.remove("active");
+  }
+}
 
 toggleMenu.addEventListener("click", menuAtivo);
 toggleMenu.addEventListener("touchstart", menuAtivo);
+document
+  .querySelector(".nav-menu")
+  .addEventListener("click", fecharMenuAoClicarLink);
 
 const trilho = document.querySelector(".container");
 
@@ -28,7 +40,7 @@ function mover() {
 trilho.addEventListener("click", mover);
 
 const btn = document.getElementById("btn");
-const swiperDark = document.querySelector(".swiper");
+const swiperDark = document.querySelectorAll(".swiper");
 const logoItem = document.querySelector(".logo");
 const devLinks = document.querySelectorAll(".dev-links");
 const introInfo = document.querySelector(".intro_info");
@@ -40,20 +52,23 @@ const arrow = document.querySelectorAll(".arrow");
 const aboutSoft = document.querySelector(".about-softskills");
 const skillsIcons = document.querySelectorAll(".skillsIcon");
 const skillsSpan = document.querySelectorAll(".skills-info span");
+const skillsInfo = document.querySelectorAll(".skills-info");
+const contactContainer = document.querySelector(".contact-container");
 const contactSpan = document.querySelectorAll("#contact span");
 const formLabels = document.querySelectorAll("label");
 const formButton = document.querySelector(".button");
 const projects = document.querySelectorAll(".projects");
+const projectImg = document.querySelectorAll(".project-img");
 const projectsAfter = document.querySelector(".projects-container");
 btn.addEventListener("change", (e) => {
   const listMenu = document.querySelector(".nav-menu");
   document.body.classList.toggle("dark", e.target.checked);
-  swiperDark.classList.toggle("dark", e.target.checked);
   logoItem.classList.toggle("dark", e.target.checked);
   listMenu.classList.toggle("dark", e.target.checked);
   introInfo.classList.toggle("dark", e.target.checked);
   headerMobile.classList.toggle("dark", e.target.checked);
   projectsAfter.classList.toggle("dark", e.target.checked);
+  contactContainer.classList.toggle("dark", e.target.checked);
   formButton.classList.toggle("dark", e.target.checked);
   projects.forEach((projects) => {
     projects.classList.toggle("dark", e.target.checked);
@@ -79,11 +94,20 @@ btn.addEventListener("change", (e) => {
   skillsSpan.forEach((span) => {
     span.classList.toggle("dark", e.target.checked);
   });
+  skillsInfo.forEach((info) => {
+    info.classList.toggle("dark", e.target.checked);
+  });
   contactSpan.forEach((span) => {
     span.classList.toggle("dark", e.target.checked);
   });
   formLabels.forEach((label) => {
     label.classList.toggle("dark", e.target.checked);
+  });
+  projectImg.forEach((img) => {
+    img.classList.toggle("dark", e.target.checked);
+  });
+  swiperDark.forEach((swiper) => {
+    swiper.classList.toggle("dark", e.target.checked);
   });
 });
 

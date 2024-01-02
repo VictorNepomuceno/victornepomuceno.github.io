@@ -1,4 +1,8 @@
 @media (max-width: 800px) {
+  .arrow {
+    display: none;
+  }
+
   body {
     max-width: 600px;
     margin: 0px 0px 0px 0px;
@@ -9,10 +13,6 @@
     padding: 0px;
     margin: 0px;
     z-index: 0;
-  }
-
-  #skills {
-    display: none;
   }
 
   #projects {

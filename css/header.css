@@ -121,6 +121,10 @@
     visibility: hidden;
   }
 
+  .nav-menu a:hover {
+    background-color: transparent;
+  }
+
   .nav-menu.active {
     visibility: visible;
     width: 40%;
@@ -144,5 +148,9 @@
 
   .header-menu.dark .menu-icons i {
     color: #333;
+  }
+
+  .nav-menu.dark .itens-menu:hover {
+    background: transparent;
   }
 }

@@ -17,6 +17,35 @@
   height: 50vh;
 }
 
+.skills-info .image2 {
+  display: none;
+}
+
+.skills-info .image3 {
+  display: none;
+}
+
+.skills-info.dark .image1 {
+  display: none;
+}
+
+.redux:hover .image1 {
+  display: none;
+}
+
+.redux:hover .image3 {
+  display: block;
+  z-index: 99999;
+}
+
+.skills-info.dark .image2 {
+  display: block;
+}
+
+.skills-info.dark:hover .image2 {
+  display: none;
+}
+
 .skills-box {
   display: grid;
   gap: 75px;
@@ -101,4 +130,50 @@
   /* display: none; */
   font-weight: 500;
   color: #333;
+}
+
+@media (max-width: 600px) {
+  #skills .arrow {
+    display: none;
+  }
+
+  #skills {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    height: max-content;
+  }
+
+  .skills-info-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 50px;
+    gap: 45px;
+    height: max-content;
+  }
+
+  .skills-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skills-info img {
+    width: 50px;
+  }
+
+  .skills-info i {
+    font-size: 50px;
+    /* cursor: pointer; */
+    color: #333;
+    transition: 0.2s;
+  }
+
+  .skills-info span {
+    font-size: 13px;
+    /* display: none; */
+    font-weight: 500;
+    color: #333;
+  }
 }
