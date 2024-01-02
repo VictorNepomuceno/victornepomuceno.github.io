@@ -91,7 +91,9 @@ btn.addEventListener("change", (e) => {
 
 const mybObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    entry.target.classList.toggle("show", entry.isIntersecting);
+    if (entry.isIntersecting && !entry.target.classList.contains("show")) {
+      entry.target.classList.add("show");
+    }
   });
 });
 
@@ -107,6 +109,14 @@ function abrirModal() {
   const janelaModal = document.querySelector(".janelamodal");
   janelaModal.classList.add("abrir");
 
+  function fecharModalComEsc(e) {
+    if (e.key === "Escape") {
+      janelaModal.classList.remove("abrir");
+    }
+  }
+
+  window.addEventListener("keydown", fecharModalComEsc);
+
   janelaModal.addEventListener("click", (e) => {
     if (e.target.id == "fechar" || e.target.id == "janelamodal") {
       janelaModal.classList.remove("abrir");
@@ -120,6 +130,14 @@ const imagemDois = document.querySelector(".bikcraft");
 function abrirModalBik() {
   const bikcraftModal = document.querySelector(".bikcraftmodal");
   bikcraftModal.classList.add("abrir");
+
+  function fecharModalComEsc(e) {
+    if (e.key === "Escape") {
+      bikcraftModal.classList.remove("abrir");
+    }
+  }
+
+  window.addEventListener("keydown", fecharModalComEsc);
 
   bikcraftModal.addEventListener("click", (e) => {
     if (e.target.id == "fechar" || e.target.id == "bikcraftmodal") {
@@ -135,12 +153,21 @@ function abrirModalAnimais() {
   const animaisModal = document.querySelector(".animaismodal");
   animaisModal.classList.add("abrir");
 
+  function fecharModalComEsc(e) {
+    if (e.key === "Escape") {
+      animaisModal.classList.remove("abrir");
+    }
+  }
+
+  window.addEventListener("keydown", fecharModalComEsc);
+
   animaisModal.addEventListener("click", (e) => {
     if (e.target.id == "fechar" || e.target.id == "animaismodal") {
       animaisModal.classList.remove("abrir");
     }
   });
 }
+
 imagemTres.addEventListener("click", abrirModalAnimais);
 
 var swiper = new Swiper(".swiper", {
