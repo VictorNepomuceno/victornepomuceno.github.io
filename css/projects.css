@@ -147,3 +147,111 @@
 .projects-text p {
   font-size: 15px;
 }
+
+.linksTwo {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    padding: 0px 20px;
+  }
+  #projects h1 {
+    margin-top: 0px;
+  }
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .projects-img img {
+    margin-top: 10px;
+    max-width: 380px;
+  }
+
+  .projects-img i {
+    position: absolute;
+    bottom: 160px;
+    left: 180px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #666;
+  }
+
+  .projects:first-child {
+    margin-top: 4rem;
+  }
+
+  .projects {
+    margin-top: 100px;
+    position: relative;
+  }
+  .projects::after {
+    display: none;
+  }
+
+  .projects-container p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 30px;
+  }
+
+  .projects h2 {
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: center;
+    justify-content: start;
+  }
+
+  .projects-list > span {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 0px;
+    color: #444;
+  }
+
+  .flex-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    margin-top: 20px;
+    text-align: start;
+    justify-content: space-around;
+  }
+  .flex-list-inside {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 16px;
+    color: #444;
+  }
+
+  .projects-text p {
+    font-size: 15px;
+  }
+
+  .linksOne {
+    display: none;
+  }
+
+  .linksTwo {
+    display: flex;
+    margin-top: 32px;
+  }
+
+  .linksTwo a {
+    padding: 10px 20px;
+    margin: 0;
+    width: 130px;
+  }
+}
