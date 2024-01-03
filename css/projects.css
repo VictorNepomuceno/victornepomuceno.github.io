@@ -155,7 +155,6 @@
 @media (max-width: 600px) {
   #projects {
     margin-top: 7rem;
-    margin-bottom: 7rem;
     padding: 0px 20px;
   }
   #projects h1 {
@@ -173,7 +172,7 @@
 
   .projects-img i {
     position: absolute;
-    bottom: 160px;
+    bottom: 90px;
     left: 180px;
     font-size: 35px;
     cursor: pointer;
@@ -181,7 +180,7 @@
   }
 
   .projects:first-child {
-    margin-top: 4rem;
+    margin-top: 3.2rem;
   }
 
   .projects {
@@ -246,7 +245,7 @@
 
   .linksTwo {
     display: flex;
-    margin-top: 32px;
+    margin-top: 50px;
   }
 
   .linksTwo a {

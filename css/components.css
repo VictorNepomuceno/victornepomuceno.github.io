@@ -283,14 +283,15 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: rgb(21, 21, 21);
+  background-color: #00000070;
+  opacity: 1;
 }
 
 .swiper.dark .swiper-pagination-bullet {
   background-color: #f1f1f1;
 }
 .swiper-pagination-bullet-active {
-  background-color: #333;
+  background-color: #111;
 }
 
 .swiper-button-prev,
@@ -312,7 +313,7 @@
 .bikcraftmodal {
   position: fixed;
   background: #33333335;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(100px);
   top: 50%;
   left: 50%;
   z-index: 5000000;
@@ -346,4 +347,24 @@
 
 .animaismodal.abrir {
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .fechar {
+    top: 20px;
+    right: 145px;
+    font-size: 16px;
+    width: 80px;
+    height: 35px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+  }
 }
