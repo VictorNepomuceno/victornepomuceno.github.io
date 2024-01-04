@@ -75,7 +75,7 @@ input {
 input::placeholder {
   color: #333;
   opacity: 0.5;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 input:focus,
