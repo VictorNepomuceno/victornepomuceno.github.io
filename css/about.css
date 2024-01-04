@@ -125,7 +125,7 @@
   outline-color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #about .arrow i {
     display: none;
   }

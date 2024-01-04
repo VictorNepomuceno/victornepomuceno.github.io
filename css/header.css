@@ -70,10 +70,11 @@
   background: #666;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .header-menu {
     background-color: #333;
     padding: 0px;
+    margin: 0px;
     width: 100%;
     position: relative;
     top: 0;

@@ -197,7 +197,7 @@
 .janelamodal {
   position: fixed;
   background: #33333335;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(100px);
   top: 50%;
   left: 50%;
   z-index: 5000000;
@@ -332,7 +332,7 @@
 .animaismodal {
   position: fixed;
   background: #33333335;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(100px);
   top: 50%;
   left: 50%;
   z-index: 5000000;
