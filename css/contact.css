@@ -137,3 +137,151 @@
 #contact span.dark {
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  #contact {
+    margin-top: 7rem;
+  }
+
+  #contact .titleMain {
+    padding-top: 0px;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .contact-container h2 {
+    margin-bottom: 0rem;
+  }
+
+  .contact-socials .dev-socials {
+    margin: 3.2rem 0px 0px 0px;
+    padding: 0;
+    gap: 75px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact-socials .dev-socials .dev-socials-text {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .dev-socials-text span {
+    color: #333;
+    font-weight: 500;
+  }
+  .contact-socials .dev-socials i {
+    font-size: 45px;
+  }
+  .contact-socials .dev-socials i:hover {
+    transform: none;
+  }
+  .contact-socials .dev-socials-text:hover {
+    transform: scale(1.05);
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-insideone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .inside {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .firstInput {
+    width: 380px;
+  }
+
+  .secondInput {
+    width: 380px;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .button > button {
+    background-color: #333;
+    transition: all 0.3s ease;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .button.dark .btn {
+    background-color: #fff;
+    color: #333;
+    outline: #222;
+  }
+  .copy {
+    align-self: center;
+    position: relative;
+    bottom: -60px;
+    font-size: 11px;
+    left: 0px;
+    color: #444;
+    opacity: 0.7;
+  }
+
+  .copy span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+  }
+
+  #contact span.dark {
+    color: #fff;
+  }
+
+  textarea {
+    width: 380px;
+    font-size: 16px;
+    height: 150px;
+  }
+  label {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 1;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+  }
+}
