@@ -111,19 +111,19 @@ btn.addEventListener("change", (e) => {
   });
 });
 
-const mybObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting && !entry.target.classList.contains("show")) {
-      entry.target.classList.add("show");
-    }
-  });
-});
+// const mybObserver = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting && !entry.target.classList.contains("show")) {
+//       entry.target.classList.add("show");
+//     }
+//   });
+// });
 
-const hiddenElements = document.querySelectorAll(".hidden");
+// const hiddenElements = document.querySelectorAll(".hidden");
 
-hiddenElements.forEach((element) => {
-  mybObserver.observe(element);
-});
+// hiddenElements.forEach((element) => {
+//   mybObserver.observe(element);
+// });
 
 const imagemUm = document.querySelector(".projects-img");
 
@@ -215,3 +215,21 @@ var swiper = new Swiper(".swiper", {
   },
   keyboard: true,
 });
+
+const sections = document.querySelectorAll(".hidden");
+const halfWindow = window.innerHeight * 0.6;
+
+function animationScroll() {
+  sections.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const halfTop = sectionTop - halfWindow < 0;
+    if (halfTop) {
+      section.classList.add("show");
+    } else {
+      section.classList.remove("show");
+    }
+  });
+}
+animationScroll();
+
+window.addEventListener("scroll", animationScroll);

@@ -102,8 +102,8 @@
 
 .hidden {
   opacity: 0;
-  transition: all 1.5s;
-  filter: blur(7px);
+  transition: all 1s;
+  filter: blur(12px);
 }
 
 .from-right {
@@ -118,11 +118,11 @@
   opacity: 1;
   filter: blur(0px);
   transform: translateX(0);
-  transition: all 1.5s;
+  transition: all 1s;
 }
 
 #profile .show:nth-child(2) {
-  transition-delay: 0.35s;
+  /* transition-delay: 0.35s; */
 }
 
 @media (max-width: 600px) {
