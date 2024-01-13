@@ -50,6 +50,10 @@
   grid-template-columns: 1fr;
 }
 
+.intro_info .first_p {
+  font-size: 1.3rem;
+}
+
 .intro_info .last_p {
   font-size: 1.75rem;
 }
@@ -132,7 +136,7 @@
 }
 
 .dev-socials i {
-  font-size: 32px;
+  font-size: 36px;
   transition: all 0.3s;
   color: #333;
 }

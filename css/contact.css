@@ -145,13 +145,15 @@
   color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   #contact {
     margin-top: 7rem;
+    margin-bottom: 0px;
   }
 
   #contact .titleMain {
     padding-top: 0px;
+    padding-bottom: 20px;
   }
 
   .contact-container {
@@ -173,8 +175,9 @@
     padding: 0;
     gap: 75px;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .contact-socials .dev-socials .dev-socials-text {
     flex-direction: column;
@@ -184,6 +187,11 @@
     color: #333;
     font-weight: 500;
   }
+
+  .span2 {
+    display: none;
+  }
+
   .contact-socials .dev-socials i {
     font-size: 45px;
   }
@@ -195,7 +203,7 @@
   }
 
   .contact-form {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
 
@@ -255,7 +263,7 @@
   .copy {
     align-self: center;
     position: relative;
-    bottom: -60px;
+    bottom: 0px;
     font-size: 11px;
     left: 0px;
     color: #444;
@@ -266,6 +274,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    padding-top: 100px;
     padding-bottom: 5px;
   }
 
