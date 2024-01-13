@@ -1,11 +1,12 @@
 #contact .arrow i {
-  bottom: -100px;
+  bottom: -130px;
   transform: rotate(180deg);
-  right: -32px;
+  right: -100px;
 }
 
 #contact {
-  margin-top: 230px;
+  margin-top: 200px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -14,14 +15,14 @@
 }
 
 #contact .titleMain {
-  padding-top: 30px;
+  padding-top: 0px;
   text-align: center;
 }
 
 .contact-container {
-  display: grid;
+  display: flex;
   grid-template-columns: auto 7fr;
-  margin-top: 70px;
+  margin-top: 120px;
   align-items: center;
   justify-content: center;
   gap: 150px;
@@ -38,11 +39,12 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 60px;
+  gap: 7rem;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
+
 .contact-socials .dev-socials .dev-socials-text {
   display: flex;
   align-items: center;
@@ -55,8 +57,13 @@
   color: #333;
   font-weight: 500;
 }
+
+.span2 {
+  font-size: 14px;
+  opacity: 0.7;
+}
 .contact-socials .dev-socials i {
-  font-size: 50px;
+  font-size: 70px;
 }
 .contact-socials .dev-socials i:hover {
   transform: none;
@@ -66,7 +73,7 @@
 }
 
 .contact-form {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -120,9 +127,9 @@
 .copy {
   align-self: center;
   position: relative;
-  bottom: -140px;
+  bottom: -200px;
   font-size: 13px;
-  left: -600px;
+  left: -550px;
   color: #444;
   opacity: 0.7;
 }
