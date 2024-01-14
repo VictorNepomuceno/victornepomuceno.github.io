@@ -148,22 +148,28 @@
     display: flex;
     /* flex-direction: column; */
     margin-top: 50px;
-    gap: 45px;
+    gap: 40px;
     height: max-content;
   }
 
   .skills-box {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+  }
+
+  .skills-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .skills-info img {
-    width: 50px;
+    width: 45px;
   }
 
   .skills-info i {
-    font-size: 50px;
+    font-size: 45px;
     /* cursor: pointer; */
     color: #333;
     transition: 0.2s;
@@ -174,5 +180,6 @@
     /* display: none; */
     font-weight: 500;
     color: #333;
+    /* display: none; */
   }
 }
