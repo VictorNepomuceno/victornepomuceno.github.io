@@ -108,7 +108,8 @@
   font-weight: 600;
   font-size: 17px;
   margin-bottom: 16px;
-  color: #444;
+  font-family: "Clash Display", sans-serif;
+  color: #333;
 }
 
 .projects-list .dev-links {

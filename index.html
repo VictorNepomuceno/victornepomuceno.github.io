@@ -4,14 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+      integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,300&f[]=ranade@700,400,500&f[]=satoshi@700,500,400&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,328 +32,581 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="./assets/code-solid.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/code-solid.svg"
+      type="image/x-icon"
+    />
     <title>Victor Nepomuceno | Desenvolvedor Front-End</title>
   </head>
-    <body class="toggleNav">
-    <header class="header-menu ">
-      <div class="mobile-menu">
-        <div class="toggleMenu"></div>
-        <div class="logo">
-          <a class="itens-menu" href="/">VNcodes</a>
-        </div>
-        <div class="container">
-          <input type="checkbox" name="btn" id="btn">
-          <label for="btn"><div class="circle"></div></label>
-        </div>
-            </div>
+  <body class="toggleNav">
+    <header class="header-menu">
+      <!-- <div class="mobile-menu"> -->
+      <i class="toggleMenu ri-menu-2-fill"></i>
+      <i class="toggleClose hide ri-close-line"></i>
+      <div class="logo">
+        <a class="itens-menu" href="/">VNcodes</a>
       </div>
-      <nav>
+      <i class="sun ri-sun-line"></i>
+      <i class="moon ri-moon-fill"></i>
+      <div class="container">
+        <input type="checkbox" name="btn" id="btn" />
+        <label for="btn"><div class="circle"></div></label>
+      </div>
+      <!-- </div> -->
+      <!-- </div> -->
+      <nav class="nav-menu-absolute">
         <ul class="nav-menu">
           <li><a class="itens-menu" href="#about">Sobre</a></li>
           <li><a class="itens-menu" href="#skills">Habilidades</a></li>
           <li><a class="itens-menu" href="#projects">Projetos</a></li>
           <li><a class="itens-menu" href="#contact">Contato</a></li>
-            <div class="menu-icons">
-              <a target="_blank" href="mailto:victornepomucenodev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-              <a target="_blank" href="https://github.com/VictorNepomuceno"><i class="fa-brands fa-github"></i></a>
-              <a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+          <div class="menu-icons">
+            <a target="_blank" href="mailto:victornepomucenodev@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a target="_blank" href="https://github.com/VictorNepomuceno"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
         </ul>
       </nav>
-      </header>
-  <main>
-    <section id="profile" class="hidden" >
-      
-      <div class="intro_picture hidden"><a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><img src="./assets/logo.jpeg" alt="" /></a></div>
-      <div class="intro_info">
-        <p class="first_p">Olá, meu nome é</p>
-        <h1 class="titleMain">Victor Nepomuceno</h1>  
-        <p class="last_p">Desenvolvedor Front-End</p>
-        <div class="dev-links">
-          <a href="#">Currículo</a>
-          <a href="#contact">Contato</a>
+    </header>
+    <main>
+      <section id="profile" class="hidden">
+        <div class="intro_picture hidden">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"
+            ><img src="./assets/logo.jpeg" alt=""
+          /></a>
         </div>
-        <div class="dev-socials">
-          <a target="_blank" href="mailto:victornepomucenodev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-          <a target="_blank" href="https://github.com/VictorNepomuceno"><i class="fa-brands fa-github"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-      </div>
-      <div><a class="arrow" href="#about"><i class="fa-solid fa-angles-down"></i></a></div>
-    </section>
-
-    <section id="about" class="hidden from-left">
-      <div class="arrowAbout "><a class="arrow" href="#skills"><i class="fa-solid fa-angles-down"></i></a></div>
-     <div class="about-title">
-       <h1 class="titleMain">Sobre mim</h1>
-     </div>
-     <div class="about-info">
-      <img src="./assets/about-victor.jpeg" alt="">
-      <div class="about-text">
-        <div class="about-softskills">
-          <div class="experience one"><h3><i class="fa-solid fa-award"></i>Constante aprendizado</h3></div>
-          <div class="experience two">
-          <h3><i class="fa-solid fa-user-group"></i>Trabalho em equipe</h3></div>
-        </div>
-        <p>Me chamo Victor Nepomuceno, tenho 22 anos, e sou um apaixonado desenvolvedor frontend. Desde jovem, minha afinidade com computadores e jogos moldou minha trajetória, conectando-me de forma intrínseca à tecnologia. Acredito na força da colaboração em equipe para solucionar desafios, e meu entusiasmo em ser desenvolvedor reflete-se na busca constante pela excelência na criação de experiências web inovadoras e envolventes.</p>
-    </div>
-     </div>
-    </section>
-
-    <section id="skills" class="hidden from-left">
-      <div class="arrowSkills"><a class="arrow" href="#projects"><i class="fa-solid fa-angles-down"></i></a></div>
-      <div class="skills-title"><h1 class="titleMain">Habilidades</h1></div>
-      <div class="skills-info-container">
-        <div class="skills-box">
-          <div class="skills-info html"><i class="fa-brands fa-html5 skillsIcon"></i><span>HTML5</span></div>
-          <div class="skills-info css"><i class="fa-brands fa-css3-alt skillsIcon"></i><span>CSS3</span></div>
-        </div>
-        <div class="skills-box">
-          <div class="skills-info js"><i class="fa-brands fa-js skillsIcon"></i><span>JavaScript</span></div>
-          <div class="skills-info bootstrap"><i class="fa-brands fa-bootstrap skillsIcon"></i><span>Bootstrap</span></div>
-        </div>
-        <div class="skills-box">
-          <div class="skills-info react"><i class="fa-brands fa-react skillsIcon"></i><span>React</span></div>
-          <div class="skills-info redux"><img class="image1" src="./assets/icons8-redux.svg" alt=""> <img src="./assets/reduxDark.svg" alt="" class="image2"><img class="image3" src="./assets/reduxColor.svg" alt=""><span>Redux</span></div>
-        </div>
-        <div class="skills-box">
-          <div class="skills-info sass"><i class="fa-brands fa-sass skillsIcon"></i><span>Sass</span></div>
-          <div class="skills-info git"><i class="fa-brands fa-git skillsIcon"></i><span>git</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="arrowProjects"><a class="arrow" href="#contact"><i class="fa-solid fa-angles-down"></i></a></div>
-      <div class="hidden from-left"><h1 class="titleMain">Projetos</h1></div>
-      <div class="projects-container">
-        <div class="projects hidden">
-          <h2>Lírios Recepções</h2>
-          <div class="projects-info">
-            <div class="projects-text">
-              <p>Projeto de design, front-end e back-end do site do Lírios Recepções, um salão de recepção localizado em Parnamirim-RN. Esse projeto foi pensado do zero por mim, o site é uma carta de apresentação e galeria do salão com implementação de formulário de contato para que os clientes possam entrar em contato com os atendentes.</p>
-            </div>
-            <div class="projectsTop">
-              <div class="projects-list">
-                <span>Tecnologias Utilizadas</span>
-                <ul class="flex-list">
-                  <li class="flex-list-inside"><i class="fa-brands fa-html5"></i><span>HTML</span></li>
-                  <li class="flex-list-inside"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
-                  <li class="flex-list-inside"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
-                  <li class="flex-list-inside"><i class="fa-brands fa-php"></i><span>PHP</span></li>
-                </ul>
-                <div class="dev-links linksOne">
-                  <a target="_blank" href="https://victornepomuceno.github.io/liriosrecepcoes/">Live Demo</a>
-                  <a target="_blank" href="https://github.com/VictorNepomuceno/liriosrecepcoes">Github</a>
-                </div>
-              </div>
-            </div>
+        <div class="intro_info">
+          <p class="first_p">Olá! Meu nome é</p>
+          <h1 class="titleMain">Victor Nepomuceno</h1>
+          <p class="last_p">Desenvolvedor Front-End</p>
+          <!-- <i class="fa-regular fa-face-laugh-wink fa-spin"></i> -->
+          <div class="dev-links">
+            <a href="#">Currículo</a>
+            <a href="#contact">Contato</a>
           </div>
-        </div>
-        <div class="projects-img hidden from-right" ><img data-tilt src="./assets/liriosImage.jpeg" alt=""> <i class="fa-solid fa-eye"></i></div>
-        <div class="dev-links projectsLinks linksTwo">
-          <a target="_blank" href="https://victornepomuceno.github.io/liriosrecepcoes/">Live Demo</a>
-          <a target="_blank" href="https://github.com/VictorNepomuceno/liriosrecepcoes">Github</a>
-        </div>
-        
-        
-        <div class="projects hidden">
-          <h2>Bikcraft</h2>
-          <div class="projects-info">
-            <div class="projects-text">
-              <p>Projeto de front-end feito no curso da Origamid. Nesse projeto pude aprender muitos conceitos de CSS e Javascript e aperfeiçoar minhas habilidades nessas tecnologias.</p>
-            </div>
-            <div class="projectsTop">
-              <div class="projects-list">
-                <span>Tecnologias Utilizadas</span>
-                <ul class="flex-list">
-                  <li class="flex-list-inside"><i class="fa-brands fa-html5"></i><span>HTML</span></li>
-                  <li class="flex-list-inside"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
-                  <li class="flex-list-inside"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
-                </ul>
-                <div class="dev-links linksOne">
-                  <a target="_blank"  href="https://victornepomuceno.github.io/bikcraft/">Live Demo</a>
-                  <a target="_blank" href="https://github.com/VictorNepomuceno/bikcraft">Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects-img hidden from-right bikcraft"><img data-tilt src="./assets/imagemBikcraft.jpeg" alt=""><i class="fa-solid fa-eye"></i></div>
-        <div class="dev-links projectsLinks linksTwo">
-          <a target="_blank"  href="https://victornepomuceno.github.io/bikcraft/">Live Demo</a>
-          <a target="_blank" href="https://github.com/VictorNepomuceno/bikcraft">Github</a>
-        </div>
-       
-       
-        <div class="projects hidden">
-          <h2>Animais Fantásticos</h2>
-          <div class="projects-info">
-            <div class="projects-text">
-              <p>Projeto de front-end feito no curso Origamid. Nesse projeto aprendi vários conceitos aprofundados de JavaScript que me deixou bem familiarizado com a tecnologia e me fez me apaixonar por ela.</p>
-            </div>
-            <div class="projectsTop">
-              <div class="projects-list">
-                <span>Tecnologias Utilizadas</span>
-                <ul class="flex-list">
-                  <li class="flex-list-inside"><i class="fa-brands fa-html5"></i><span>HTML</span></li>
-                  <li class="flex-list-inside"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></li>
-                  <li class="flex-list-inside"><i class="fa-brands fa-js"></i><span>JavaScript</span></li>
-                </ul>
-                <div class="dev-links projectsLinks linksOne">
-                  <a target="_blank" href="https://victornepomuceno.github.io/animais-fantasticos/">Live Demo</a>
-                  <a target="_blank" href="https://github.com/VictorNepomuceno/animais-fantasticos">Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects-img hidden from-right animais" ><img data-tilt src="./assets/imagemAnimais.jpeg" alt=""><i class="fa-solid fa-eye"></i></div>
-        <div class="dev-links projectsLinks linksTwo">
-          <a href="#">Live Demo</a>
-          <a href="#">Github</a>
-        </div>
-      </div>
-    </section>
-    
-    
-    <section id="contact" class="hidden from-left">
-      <div class="arrowProjects"><a class="arrow" href="#"><i class="fa-solid fa-angles-down"></i></a></div>
-      <h1 class="titleMain">Contatos</h1>
-      <div class="contact-container">
-        <div class="contact-socials">
           <div class="dev-socials">
-            <div class="dev-socials-text">
-              <a target="_blank" href="mailto:victornepomucenodev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-              <span>Email</span>
-              <span class="span2">victornepomucenodev@gmail.com</span>
+            <a target="_blank" href="mailto:victornepomucenodev@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a target="_blank" href="https://github.com/VictorNepomuceno"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <a class="arrow" href="#about"
+            ><i class="fa-solid fa-angles-down"></i
+          ></a>
+        </div>
+      </section>
+
+      <section id="about" class="hidden from-left">
+        <div class="arrowAbout">
+          <a class="arrow" href="#skills"
+            ><i class="fa-solid fa-angles-down"></i
+          ></a>
+        </div>
+        <div class="about-title">
+          <h1 class="titleMain">Sobre mim</h1>
+        </div>
+        <div class="about-info">
+          <img src="./assets/about-victor.jpeg" alt="" />
+          <div class="about-text">
+            <div class="about-softskills">
+              <div class="experience one">
+                <h3><i class="fa-solid fa-award"></i>Constante aprendizado</h3>
+              </div>
+              <div class="experience two">
+                <h3>
+                  <i class="fa-solid fa-user-group"></i>Trabalho em equipe
+                </h3>
+              </div>
             </div>
-            <div class="dev-socials-text">
-              <a target="_blank" href="https://github.com/VictorNepomuceno"><i class="fa-brands fa-github"></i></a>
-              <span>Github</span>
-              <span class="span2">@victornepomuceno</span>
+            <p>
+              Me chamo Victor Nepomuceno, tenho 22 anos, e sou um apaixonado
+              desenvolvedor frontend. Desde jovem, minha afinidade com
+              computadores e jogos moldou minha trajetória, conectando-me de
+              forma intrínseca à tecnologia. Acredito na força da colaboração em
+              equipe para solucionar desafios, e meu entusiasmo em ser
+              desenvolvedor reflete-se na busca constante pela excelência na
+              criação de experiências web inovadoras e envolventes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="hidden from-left">
+        <div class="arrowSkills">
+          <a class="arrow" href="#projects"
+            ><i class="fa-solid fa-angles-down"></i
+          ></a>
+        </div>
+        <div class="skills-title"><h1 class="titleMain">Habilidades</h1></div>
+        <div class="skills-info-container">
+          <div class="skills-box">
+            <div class="skills-info html">
+              <i class="fa-brands fa-html5 skillsIcon"></i><span>HTML5</span>
             </div>
-            <div class="dev-socials-text">
-              <a target="_blank" href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"><i class="fa-brands fa-linkedin"></i></a>
-              <span>Linkedin</span>
-              <span class="span2">@victornepomucenodev</span>
+            <div class="skills-info css">
+              <i class="fa-brands fa-css3-alt skillsIcon"></i><span>CSS3</span>
             </div>
-            <div class="dev-socials-text">
-              <a target="_blank" href="https://wa.me/+5584994451103?text="><i class="fa-brands fa-whatsapp"></i></a>
-              <span>Whatsapp</span>
-              <span class="span2">(84) 99445-1103</span>
+          </div>
+          <div class="skills-box">
+            <div class="skills-info js">
+              <i class="fa-brands fa-js skillsIcon"></i><span>JavaScript</span>
+            </div>
+            <div class="skills-info bootstrap">
+              <i class="fa-brands fa-bootstrap skillsIcon"></i
+              ><span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="skills-box">
+            <div class="skills-info react">
+              <i class="fa-brands fa-react skillsIcon"></i><span>ReactJS</span>
+            </div>
+            <div class="skills-info redux">
+              <img class="image1" src="./assets/icons8-redux.svg" alt="" />
+              <img src="./assets/reduxDark.svg" alt="" class="image2" /><img
+                class="image3"
+                src="./assets/reduxColor.svg"
+                alt=""
+              /><span>Redux</span>
+            </div>
+          </div>
+          <div class="skills-box">
+            <div class="skills-info sass">
+              <i class="fa-brands fa-sass skillsIcon"></i><span>Sass</span>
+            </div>
+            <div class="skills-info git">
+              <i class="fa-brands fa-git skillsIcon"></i><span>git</span>
             </div>
           </div>
         </div>
-        <div class="contact-form">
-          <form action="#">
-            <div class="form-insideone">
-             
+      </section>
+
+      <section id="projects">
+        <div class="arrowProjects">
+          <a class="arrow" href="#contact"
+            ><i class="fa-solid fa-angles-down"></i
+          ></a>
+        </div>
+        <div class="hidden from-left"><h1 class="titleMain">Projetos</h1></div>
+        <div class="projects-container">
+          <div class="projects hidden">
+            <h2>Lírios Recepções</h2>
+            <div class="projects-info">
+              <div class="projects-text">
+                <p>
+                  Projeto de design, front-end e back-end do site do Lírios
+                  Recepções, um salão de recepção localizado em Parnamirim-RN.
+                  Esse projeto foi pensado do zero por mim, o site é uma carta
+                  de apresentação e galeria do salão com implementação de
+                  formulário de contato para que os clientes possam entrar em
+                  contato com os atendentes.
+                </p>
+              </div>
+              <div class="projectsTop">
+                <div class="projects-list">
+                  <span class="spanFont">Tecnologias Utilizadas</span>
+                  <ul class="flex-list">
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-html5"></i><span>HTML</span>
+                    </li>
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
+                    </li>
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-js"></i><span>JavaScript</span>
+                    </li>
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-php"></i><span>PHP</span>
+                    </li>
+                  </ul>
+                  <div class="dev-links linksOne">
+                    <a
+                      target="_blank"
+                      href="https://victornepomuceno.github.io/liriosrecepcoes/"
+                      >Live Demo</a
+                    >
+                    <a
+                      target="_blank"
+                      href="https://github.com/VictorNepomuceno/liriosrecepcoes"
+                      >Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-img hidden from-right">
+            <img data-tilt src="./assets/liriosImage.jpeg" alt="" />
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <div class="dev-links projectsLinks linksTwo">
+            <a
+              target="_blank"
+              href="https://victornepomuceno.github.io/liriosrecepcoes/"
+              >Live Demo</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/VictorNepomuceno/liriosrecepcoes"
+              >Github</a
+            >
+          </div>
+
+          <div class="projects hidden">
+            <h2>Bikcraft</h2>
+            <div class="projects-info">
+              <div class="projects-text">
+                <p>
+                  Projeto de front-end feito no curso da Origamid. Nesse projeto
+                  pude aprender muitos conceitos de CSS e Javascript e
+                  aperfeiçoar minhas habilidades nessas tecnologias.
+                </p>
+              </div>
+              <div class="projectsTop">
+                <div class="projects-list">
+                  <span class="spanFont">Tecnologias Utilizadas</span>
+                  <ul class="flex-list">
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-html5"></i><span>HTML</span>
+                    </li>
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
+                    </li>
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-js"></i><span>JavaScript</span>
+                    </li>
+                  </ul>
+                  <div class="dev-links linksOne">
+                    <a
+                      target="_blank"
+                      href="https://victornepomuceno.github.io/bikcraft/"
+                      >Live Demo</a
+                    >
+                    <a
+                      target="_blank"
+                      href="https://github.com/VictorNepomuceno/bikcraft"
+                      >Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-img hidden from-right bikcraft">
+            <img data-tilt src="./assets/imagemBikcraft.jpeg" alt="" /><i
+              class="fa-solid fa-eye"
+            ></i>
+          </div>
+          <div class="dev-links projectsLinks linksTwo">
+            <a
+              target="_blank"
+              href="https://victornepomuceno.github.io/bikcraft/"
+              >Live Demo</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/VictorNepomuceno/bikcraft"
+              >Github</a
+            >
+          </div>
+
+          <div class="projects hidden">
+            <h2>Animais Fantásticos</h2>
+            <div class="projects-info">
+              <div class="projects-text">
+                <p>
+                  Projeto de front-end feito no curso Origamid. Nesse projeto
+                  aprendi vários conceitos aprofundados de JavaScript que me
+                  deixou bem familiarizado com a tecnologia e me fez me
+                  apaixonar por ela.
+                </p>
+              </div>
+              <div class="projectsTop">
+                <div class="projects-list">
+                  <span class="spanFont">Tecnologias Utilizadas</span>
+                  <ul class="flex-list">
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-html5"></i><span>HTML</span>
+                    </li>
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
+                    </li>
+                    <li class="flex-list-inside">
+                      <i class="fa-brands fa-js"></i><span>JavaScript</span>
+                    </li>
+                  </ul>
+                  <div class="dev-links projectsLinks linksOne">
+                    <a
+                      target="_blank"
+                      href="https://victornepomuceno.github.io/animais-fantasticos/"
+                      >Live Demo</a
+                    >
+                    <a
+                      target="_blank"
+                      href="https://github.com/VictorNepomuceno/animais-fantasticos"
+                      >Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-img hidden from-right animais">
+            <img data-tilt src="./assets/imagemAnimais.jpeg" alt="" /><i
+              class="fa-solid fa-eye"
+            ></i>
+          </div>
+          <div class="dev-links projectsLinks linksTwo">
+            <a href="#">Live Demo</a>
+            <a href="#">Github</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="hidden from-left">
+        <div class="arrowProjects">
+          <a class="arrow" href="#"><i class="fa-solid fa-angles-down"></i></a>
+        </div>
+        <h1 class="titleMain">Contatos</h1>
+        <div class="contact-container">
+          <div class="contact-socials">
+            <div class="dev-socials">
+              <div class="dev-socials-text">
+                <a target="_blank" href="mailto:victornepomucenodev@gmail.com"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+                <span>Email</span>
+                <span class="span2">victornepomucenodev@gmail.com</span>
+              </div>
+              <div class="dev-socials-text">
+                <a target="_blank" href="https://github.com/VictorNepomuceno"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <span>Github</span>
+                <span class="span2">@victornepomuceno</span>
+              </div>
+              <div class="dev-socials-text">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/victor-nepomuceno-97b0a62a1/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <span>Linkedin</span>
+                <span class="span2">@victornepomucenodev</span>
+              </div>
+              <div class="dev-socials-text">
+                <a target="_blank" href="https://wa.me/+5584994451103?text="
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <span>Whatsapp</span>
+                <span class="span2">(84) 99445-1103</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form action="#">
+              <div class="form-insideone">
                 <div class="inside">
                   <label for="nome">Nome</label>
-                  <input class="firstInput" type="text" name="nome" id="nome" placeholder="João" required>
+                  <input
+                    class="firstInput"
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    placeholder="João"
+                    required
+                  />
                 </div>
                 <div class="inside">
-  
                   <label for="email">Email</label>
-                  <input class="secondInput" type="email" name="email" id="email" placeholder="joao@gmail.com" required>
+                  <input
+                    class="secondInput"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="joao@gmail.com"
+                    required
+                  />
                 </div>
-              
-            </div>
-            <div class="form-inside">
-             
+              </div>
+              <div class="form-inside">
                 <label for="envie">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="7" placeholder="Digite aqui sua mensagem..." required></textarea>
-              
-            </div>
+                <textarea
+                  name="mensagem"
+                  id="mensagem"
+                  cols="30"
+                  rows="7"
+                  placeholder="Digite aqui sua mensagem..."
+                  required
+                ></textarea>
+              </div>
 
-            <div class="button">
-              <button class="btn" type="submit">Enviar Mensagem</button>
-            </div>
-            
-           
-
-          </form>
+              <div class="button">
+                <button class="btn" type="submit">Enviar Mensagem</button>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="copy">
+          <span
+            ><i class="fa-solid fa-copyright"></i>Copyright 2023, Victor
+            Nepomuceno. Todos os direitos reservados.</span
+          >
+        </div>
+      </section>
+    </main>
+
+    <div class="janelamodal" id="janelamodal">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/imagem1.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/imagem2.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/imagem3.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/imagem4.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="copy"><span><i class="fa-solid fa-copyright"></i>Copyright, Victor Nepomuceno. Todos os direitos reservados.</span></div>
-    </section>
-  </main>
-  <div class="janelamodal" id="janelamodal">
+    </div>
+    <div class="bikcraftmodal" id="bikcraftmodal">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/bikcraft1.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/bikcraft2.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/bikcraft3.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/bikcraft4.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/bikcraft5.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/bikcraft6.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
 
-    
-    <div class="swiper">
-  
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-      <div class="swiper-slide"><div class="project-img"> <button class="fechar" id="fechar">Fechar</button><img src="./assets/imagem1.jpeg" alt=""> </div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/imagem2.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/imagem3.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/imagem4.jpeg" alt=""></div></div>
-    
-  </div>
-  
-  <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
 
-  
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div class="animaismodal" id="animaismodal">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/animais1.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/animais2.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/animais3.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/animais4.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <button class="fechar" id="fechar">Fechar</button
+              ><img src="./assets/animais5.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
 
-  
-</div>
-  </div>
-  <div class="bikcraftmodal" id="bikcraftmodal">
+        <div class="swiper-pagination"></div>
 
-    
-    <div class="swiper">
-  
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/bikcraft1.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/bikcraft2.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/bikcraft3.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/bikcraft4.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/bikcraft5.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/bikcraft6.jpeg" alt=""></div></div>
-    
-  </div>
-  
-  <div class="swiper-pagination"></div>
-
-  
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  
-</div>
-  </div>
-  <div class="animaismodal" id="animaismodal">
-
-    
-    <div class="swiper">
-  
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/animais1.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/animais2.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/animais3.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/animais4.jpeg" alt=""></div></div>
-    <div class="swiper-slide"><div class="project-img"><button class="fechar" id="fechar">Fechar</button><img src="./assets/animais5.jpeg" alt=""></div></div>
-    
-  </div>
-  
-  <div class="swiper-pagination"></div>
-
-  
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  
-</div>
-  </div>
-      <script src="./tilt-vanilla.js"></script>
-      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-      <script src="./main.js"></script>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <a href="#" class="upToTop"
+      ><i class="ri-arrow-up-line"></i>
+      <div class="toolTip"><p>Voltar para o topo</p></div>
+    </a>
+    <script src="./tilt-vanilla.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

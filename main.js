@@ -1,7 +1,13 @@
 const toggleMenu = document.querySelector(".toggleMenu");
+const toggleClose = document.querySelector(".toggleClose");
 
 function menuAtivo(event) {
   if (event.type === "touchstart") event.prevent.default();
+  const moon = document.querySelector(".moon");
+  const sun = document.querySelector(".sun");
+
+  toggleClose.classList.remove("hide");
+  toggleMenu.classList.add("hide");
 
   const listMenu = document.querySelector(".nav-menu");
   listMenu.classList.toggle("active");
@@ -9,9 +15,16 @@ function menuAtivo(event) {
   navMenu.classList.toggle("active");
 
   document.onclick = function (e) {
-    if (!listMenu.contains(e.target) && !toggleMenu.contains(e.target)) {
+    if (
+      !listMenu.contains(e.target) &&
+      !toggleMenu.contains(e.target) &&
+      !moon.contains(e.target) &&
+      !sun.contains(e.target)
+    ) {
       navMenu.classList.remove("active");
       listMenu.classList.remove("active");
+      toggleClose.classList.add("hide");
+      toggleMenu.classList.remove("hide");
     }
   };
 }
@@ -27,6 +40,7 @@ function fecharMenuAoClicarLink(e) {
 
 toggleMenu.addEventListener("click", menuAtivo);
 toggleMenu.addEventListener("touchstart", menuAtivo);
+
 document
   .querySelector(".nav-menu")
   .addEventListener("click", fecharMenuAoClicarLink);
@@ -60,8 +74,8 @@ const formButton = document.querySelector(".button");
 const projects = document.querySelectorAll(".projects");
 const projectImg = document.querySelectorAll(".project-img");
 const projectsAfter = document.querySelector(".projects-container");
+const listMenu = document.querySelector(".nav-menu");
 btn.addEventListener("change", (e) => {
-  const listMenu = document.querySelector(".nav-menu");
   document.body.classList.toggle("dark", e.target.checked);
   logoItem.classList.toggle("dark", e.target.checked);
   listMenu.classList.toggle("dark", e.target.checked);
@@ -233,3 +247,129 @@ function animationScroll() {
 animationScroll();
 
 window.addEventListener("scroll", animationScroll);
+
+const sunIcon = document.querySelector(".sun");
+const moonIcon = document.querySelector(".moon");
+
+sunIcon.addEventListener("click", (e) => {
+  sunIcon.classList.add("hiddenIcon");
+  moonIcon.classList.add("showIcon");
+  document.body.classList.add("dark", e.target.checked);
+  logoItem.classList.add("dark", e.target.checked);
+  listMenu.classList.add("dark", e.target.checked);
+  introInfo.classList.add("dark", e.target.checked);
+  headerMobile.classList.add("dark", e.target.checked);
+  projectsAfter.classList.add("dark", e.target.checked);
+  contactContainer.classList.add("dark", e.target.checked);
+  formButton.classList.add("dark", e.target.checked);
+  projects.forEach((projects) => {
+    projects.classList.add("dark", e.target.checked);
+  });
+  devSocials.forEach((socials) => {
+    socials.classList.add("dark", e.target.checked);
+  });
+
+  devLinks.forEach((links) => {
+    links.classList.add("dark", e.target.checked);
+  });
+  titleMain.forEach((title) => {
+    title.classList.add("dark", e.target.checked);
+  });
+  aboutInfo.classList.add("dark", e.target.checked);
+  arrow.forEach((arrow) => {
+    arrow.classList.add("dark", e.target.checked);
+  });
+  aboutSoft.classList.add("dark", e.target.checked);
+  skillsIcons.forEach((icon) => {
+    icon.classList.add("dark", e.target.checked);
+  });
+  skillsSpan.forEach((span) => {
+    span.classList.add("dark", e.target.checked);
+  });
+  skillsInfo.forEach((info) => {
+    info.classList.add("dark", e.target.checked);
+  });
+  contactSpan.forEach((span) => {
+    span.classList.add("dark", e.target.checked);
+  });
+  formLabels.forEach((label) => {
+    label.classList.add("dark", e.target.checked);
+  });
+  projectImg.forEach((img) => {
+    img.classList.add("dark", e.target.checked);
+  });
+  swiperDark.forEach((swiper) => {
+    swiper.classList.add("dark", e.target.checked);
+  });
+});
+
+moonIcon.addEventListener("click", (e) => {
+  sunIcon.classList.remove("hiddenIcon");
+  moonIcon.classList.remove("showIcon");
+  document.body.classList.remove("dark", e.target.checked);
+  logoItem.classList.remove("dark", e.target.checked);
+  listMenu.classList.remove("dark", e.target.checked);
+  introInfo.classList.remove("dark", e.target.checked);
+  headerMobile.classList.remove("dark", e.target.checked);
+  projectsAfter.classList.remove("dark", e.target.checked);
+  contactContainer.classList.remove("dark", e.target.checked);
+  formButton.classList.remove("dark", e.target.checked);
+  projects.forEach((projects) => {
+    projects.classList.remove("dark", e.target.checked);
+  });
+  devSocials.forEach((socials) => {
+    socials.classList.remove("dark", e.target.checked);
+  });
+
+  devLinks.forEach((links) => {
+    links.classList.remove("dark", e.target.checked);
+  });
+  titleMain.forEach((title) => {
+    title.classList.remove("dark", e.target.checked);
+  });
+  aboutInfo.classList.remove("dark", e.target.checked);
+  arrow.forEach((arrow) => {
+    arrow.classList.remove("dark", e.target.checked);
+  });
+  aboutSoft.classList.remove("dark", e.target.checked);
+  skillsIcons.forEach((icon) => {
+    icon.classList.remove("dark", e.target.checked);
+  });
+  skillsSpan.forEach((span) => {
+    span.classList.remove("dark", e.target.checked);
+  });
+  skillsInfo.forEach((info) => {
+    info.classList.remove("dark", e.target.checked);
+  });
+  contactSpan.forEach((span) => {
+    span.classList.remove("dark", e.target.checked);
+  });
+  formLabels.forEach((label) => {
+    label.classList.remove("dark", e.target.checked);
+  });
+  projectImg.forEach((img) => {
+    img.classList.remove("dark", e.target.checked);
+  });
+  swiperDark.forEach((swiper) => {
+    swiper.classList.remove("dark", e.target.checked);
+  });
+});
+
+function handleScroll() {
+  const navMenu = document.querySelector(".toggleNav");
+  const upTop = document.querySelector(".upToTop");
+  const toggleClose = document.querySelector(".toggleClose");
+  const toggleMenu = document.querySelector(".toggleMenu");
+
+  if (this.scrollY >= 120) {
+    navMenu.classList.remove("active");
+    toggleClose.classList.add("hide");
+    toggleMenu.classList.remove("hide");
+  }
+
+  this.scrollY >= 120
+    ? upTop.classList.add("active")
+    : upTop.classList.remove("active");
+}
+
+window.addEventListener("scroll", handleScroll);

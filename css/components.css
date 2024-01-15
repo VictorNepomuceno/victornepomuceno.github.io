@@ -41,31 +41,12 @@
 
 .titleMain {
   font-size: 2.75rem;
-  font-weight: 700;
+  font-weight: 600;
+  /* letter-spacing: ; */
 }
 
 .titleMain.dark {
   color: #fff;
-}
-
-.toggleMenu {
-  border-top: 2px solid #fff;
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  z-index: 999;
-}
-
-.toggleMenu::after,
-.toggleMenu::before {
-  content: "";
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: #fff;
-  margin-top: 5px;
-  position: relative;
-  transition: transform 0.3s ease-in-out;
 }
 
 @keyframes imageAnimation {
@@ -121,8 +102,8 @@
   transition: all 1s;
 }
 
-#profile .show:nth-child(2) {
-  /* transition-delay: 0.35s; */
+.upToTop {
+  display: none;
 }
 
 @media (max-width: 600px) {
@@ -135,7 +116,13 @@
     right: 15px;
     width: 50px;
     height: 25px;
-    position: absolute;
+    position: static;
+    display: none;
+  }
+
+  .container input {
+    position: static;
+    /* display: none; */
   }
 
   .container .circle {
@@ -143,7 +130,7 @@
     height: 17px;
     border-radius: 50%;
     background: #333;
-    position: absolute;
+    position: relative;
     top: 4px;
     left: 5px;
     transition: 0.3s;
@@ -160,13 +147,7 @@
     background-color: #666;
   }
 
-  .toggleMenu {
-    left: 25px;
-    top: 36.5px;
-    display: block;
-  }
-
-  .toggleNav.active .toggleMenu {
+  /* .toggleNav.active .toggleMenu {
     border-top: 0px;
   }
   .toggleNav.active .toggleMenu::after {
@@ -175,18 +156,18 @@
   }
   .toggleNav.active .toggleMenu::before {
     transform: rotate(135deg);
-  }
-
+  } */
+  /* 
   .header-menu.dark .toggleMenu {
     border-color: #333;
-  }
+  } */
 
-  .header-menu.dark .toggleMenu::after {
+  /* .header-menu.dark .toggleMenu::after {
     background-color: #333;
   }
   .header-menu.dark .toggleMenu::before {
     background-color: #333;
-  }
+  } */
 
   .from-left,
   .from-right {
@@ -349,7 +330,84 @@
   display: flex;
 }
 
+.upToTop {
+  display: block;
+  position: fixed;
+  right: -10%;
+  bottom: 5rem;
+  background-color: #333;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 26px;
+  transition: all 0.3s;
+  filter: blur(30px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+.upToTop.active {
+  right: 2rem;
+  filter: blur(0px);
+  background-color: #333;
+}
+
+.upToTop:hover {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.upToTop:hover .toolTip {
+  display: block;
+}
+
+.dark .upToTop {
+  background-color: #fff;
+  color: #333;
+}
+
+.toolTip {
+  position: absolute;
+  font-size: 1rem;
+  font-family: "Clash Display", sans-serif;
+  background-color: #333;
+  padding: 1.19rem 2rem;
+  left: -205px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  display: none;
+  animation: animationTooltip 0.5s forwards;
+}
+
+@keyframes animationTooltip {
+  from {
+    filter: blur(15px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+.toolTip > p {
+  color: #fff;
+}
+
 @media (max-width: 600px) {
+  .upToTop {
+    font-size: 24px;
+    padding: 0.6rem 0.8rem;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .upToTop.active {
+    right: 0;
+  }
   .swiper-button-prev,
   .swiper-button-next {
     display: none;

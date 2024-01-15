@@ -48,18 +48,40 @@
   gap: 12px;
   text-align: center;
   grid-template-columns: 1fr;
+  font-family: "Clash Display", sans-serif;
+}
+
+.intro_info h1 {
+  font-weight: 600;
 }
 
 .intro_info .first_p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
 }
 
 .intro_info .last_p {
   font-size: 1.75rem;
+  letter-spacing: 1px;
+  margin-top: 0.875rem;
 }
 
 .intro_info.dark p {
   color: #e1e1e1;
+}
+
+.intro_info > i {
+  position: absolute;
+  bottom: 450px;
+  right: 160px;
+  font-size: 30px;
+  color: #333;
+  transform: rotate(30deg);
+}
+
+.intro_info.dark > i {
+  color: #fff;
 }
 
 .dev-links {
@@ -69,12 +91,14 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .dev-links a {
   padding: 15px 30px;
   border-radius: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
 }
 
 .dev-links a:first-child {
@@ -177,6 +201,10 @@
 
   .intro_info .last_p {
     font-size: 1.2rem;
+  }
+
+  .intro_info .first_p {
+    font-size: 1.1rem;
   }
 
   .dev-links {

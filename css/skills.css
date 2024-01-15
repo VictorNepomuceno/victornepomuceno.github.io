@@ -6,6 +6,11 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  font-family: "Clash Display", sans-serif;
+}
+
+#skills span {
+  font-weight: 500;
 }
 
 .skills-info-container {

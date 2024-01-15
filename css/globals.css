@@ -43,6 +43,13 @@ p {
   font-weight: 600;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Clash Display", sans-serif;
+  letter-spacing: 1px;
+}
+
 section {
   min-height: fit-content;
   justify-content: center;

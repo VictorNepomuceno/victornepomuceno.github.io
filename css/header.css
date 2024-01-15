@@ -19,11 +19,14 @@
   cursor: default;
   margin-bottom: 20px;
   font-size: 2rem;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 600;
 }
 
 .logo a {
   color: #333;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: "Clash Display", sans-serif;
 }
 
 .logo.dark .itens-menu {
@@ -54,6 +57,7 @@
   border-radius: 40px;
   position: relative;
   font-weight: 500;
+  font-family: "Poppins", sans-serif;
   z-index: 1;
 }
 
@@ -70,14 +74,23 @@
   background: #666;
 }
 
+.toggleMenu,
+.toggleClose,
+.moon,
+.sun {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .header-menu {
     background-color: #333;
-    padding: 0px;
-    margin: 0px;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 0px;
     width: 100%;
     position: relative;
-    top: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .header-menu.dark {
@@ -88,9 +101,59 @@
     color: #333;
   }
 
-  .mobile-menu {
-    width: 100%;
-    position: relative;
+  .toggleMenu {
+    display: block;
+    color: #fff;
+    font-size: 23px;
+    animation: animationToggle 0.3s forwards;
+    font-weight: 500;
+  }
+
+  .toggleClose {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    animation: animationToggle 0.3s forwards;
+    font-weight: 500;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .dark .toggleMenu,
+  .dark .toggleClose {
+    color: #333;
+  }
+
+  @keyframes animationToggle {
+    from {
+      filter: blur(15px);
+      transform: translateX(-30px);
+    }
+    to {
+      filter: blur(0px);
+      transform: translateX(0px);
+    }
+  }
+
+  .moon {
+    display: none;
+    color: #333;
+    font-size: 23px;
+  }
+  .sun {
+    display: block;
+    color: #fff;
+    font-size: 23px;
+  }
+
+  .showIcon {
+    display: block;
+  }
+
+  .hiddenIcon {
+    display: none;
   }
 
   .logo {
@@ -103,32 +166,38 @@
     font-size: 26px;
   }
 
-  .nav-menu {
+  .nav-menu-absolute {
     position: absolute;
-    border-radius: 0px;
-    left: 0;
-    top: 85px;
-    width: 0;
+    left: -100%;
+    top: 79px;
+    width: 60%;
+    z-index: 100000;
+    background: #333;
     height: 100vh;
-    /* box-shadow: 0px; */
-    padding: 0px;
+    transition: left 0.3s;
+  }
+  .active .nav-menu-absolute {
+    left: 0;
+  }
+
+  .dark .nav-menu-absolute {
+    background-color: #fff;
+  }
+
+  .nav-menu {
+    border-radius: 0px;
+    padding: 5rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: center;
-    padding-bottom: 300px;
-    transition: 0.3s;
-    overflow: hidden;
-    visibility: hidden;
+    padding-bottom: 230px;
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .nav-menu a:hover {
     background-color: transparent;
-  }
-
-  .nav-menu.active {
-    visibility: visible;
-    width: 40%;
   }
 
   .nav-menu a {
