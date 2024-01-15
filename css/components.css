@@ -399,6 +399,10 @@
 }
 
 @media (max-width: 600px) {
+  .toolTip {
+    display: none;
+  }
+
   .upToTop {
     font-size: 24px;
     padding: 0.6rem 0.8rem;
