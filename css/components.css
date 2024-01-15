@@ -333,14 +333,14 @@
 .upToTop {
   display: block;
   position: fixed;
-  right: -10%;
+  right: -20%;
   bottom: 5rem;
   background-color: #333;
   padding: 0.6rem 1rem;
   border-radius: 5px;
   color: #fff;
   font-size: 26px;
-  transition: all 0.3s;
+  transition: right 0.3s, background 0.3s, filter 0.3s;
   filter: blur(30px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   z-index: 9999;
@@ -398,12 +398,21 @@
   color: #fff;
 }
 
+.toolTip.hide {
+  display: none;
+}
+
 @media (max-width: 600px) {
-  .toolTip {
+  .upToTop:hover .toolTip {
     display: none;
   }
 
+  .upToTop:hover {
+    border-radius: 5px 0px 0px 5px;
+  }
+
   .upToTop {
+    right: -10%;
     font-size: 24px;
     padding: 0.6rem 0.8rem;
     border-radius: 5px 0px 0px 5px;

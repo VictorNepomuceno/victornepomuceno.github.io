@@ -373,3 +373,12 @@ function handleScroll() {
 }
 
 window.addEventListener("scroll", handleScroll);
+
+const upTop = document.querySelector(".upToTop");
+const toolTip = document.querySelector(".toolTip");
+
+function upToTopClick() {
+  toolTip.classList.add("hide");
+}
+
+upTop.addEventListener("click", upToTopClick);
