@@ -201,10 +201,12 @@
 
   .intro_info .last_p {
     font-size: 1.2rem;
+    margin-top: 0.3rem;
   }
 
   .intro_info .first_p {
     font-size: 1.1rem;
+    margin-bottom: -0.2rem;
   }
 
   .dev-links {
