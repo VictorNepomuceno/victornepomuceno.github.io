@@ -129,7 +129,18 @@
   @keyframes animationToggle {
     from {
       filter: blur(15px);
-      transform: translateX(-30px);
+      transform: translateX(-35px);
+    }
+    to {
+      filter: blur(0px);
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes animationDarkMode {
+    from {
+      filter: blur(15px);
+      transform: translateX(35px);
     }
     to {
       filter: blur(0px);
@@ -141,11 +152,13 @@
     display: none;
     color: #333;
     font-size: 23px;
+    animation: animationDarkMode 0.3s forwards;
   }
   .sun {
     display: block;
     color: #fff;
     font-size: 23px;
+    animation: animationDarkMode 0.3s forwards;
   }
 
   .showIcon {

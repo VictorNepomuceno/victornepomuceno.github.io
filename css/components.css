@@ -385,6 +385,14 @@
   animation: animationTooltip 0.5s forwards;
 }
 
+.dark .toolTip {
+  background-color: #fff;
+}
+
+.dark .toolTip p {
+  color: #333;
+}
+
 @keyframes animationTooltip {
   from {
     filter: blur(15px);
