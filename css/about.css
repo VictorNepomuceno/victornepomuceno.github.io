@@ -145,6 +145,7 @@
 
   .about-text p {
     font-size: 15px;
+    max-width: 600px;
   }
 
   .about-info {

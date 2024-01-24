@@ -28,22 +28,23 @@ function menuAtivo(event) {
     }
   };
 }
-function fecharMenuAoClicarLink(e) {
-  const link = e.target;
-  if (link.tagName === "A") {
-    const listMenu = document.querySelector(".nav-menu");
-    const navMenu = document.querySelector(".toggleNav");
-    navMenu.classList.remove("active");
-    listMenu.classList.remove("active");
-  }
-}
 
 toggleMenu.addEventListener("click", menuAtivo);
 toggleMenu.addEventListener("touchstart", menuAtivo);
 
-document
-  .querySelector(".nav-menu")
-  .addEventListener("click", fecharMenuAoClicarLink);
+const menuzinho = document.querySelectorAll(".itens-menu");
+
+function handleMenu() {
+  toggleClose.classList.add("hide");
+  toggleMenu.classList.remove("hide");
+  const navMenu = document.querySelector(".toggleNav");
+
+  navMenu.classList.remove("active");
+}
+
+menuzinho.forEach((item) => {
+  item.addEventListener("click", handleMenu);
+});
 
 const trilho = document.querySelector(".container");
 

@@ -153,6 +153,57 @@
     display: flex;
     /* flex-direction: column; */
     margin-top: 50px;
+    gap: 80px;
+    height: max-content;
+  }
+
+  .skills-box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .skills-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-info img {
+    width: 60px;
+  }
+
+  .skills-info i {
+    font-size: 60px;
+    /* cursor: pointer; */
+    color: #333;
+    transition: 0.2s;
+  }
+
+  .skills-info span {
+    font-size: 15px;
+    /* display: none; */
+    font-weight: 500;
+    color: #333;
+    /* display: none; */
+  }
+}
+@media (max-width: 570px) {
+  #skills .arrow {
+    display: none;
+  }
+
+  #skills {
+    margin-top: 7rem;
+    height: max-content;
+  }
+
+  .skills-info-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 50px;
     gap: 40px;
     height: max-content;
   }
