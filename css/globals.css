@@ -122,11 +122,11 @@ button:hover {
     transform: scale(1.02);
 }
 
-label.dark {
+.dark label {
     color: #fff;
     opacity: 1;
 }
-button.dark {
+.dark button {
     outline: 1px solid #666;
     background: #fff;
     color: #333;

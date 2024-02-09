@@ -2,7 +2,7 @@
     margin-bottom: 10px;
 }
 
-.about-title.dark .titleMain {
+.dark .about-title .titleMain {
     color: #fff;
 }
 
@@ -101,27 +101,27 @@
     left: -45px;
 }
 
-.about-info.dark p {
-    color: #fff;
-}
-
 .about-info img {
     background-color: #222;
 }
 
-.about-info.dark img {
-    background-color: #fff;
-}
-
-.about-softskills.dark i {
-    color: #f4f4f4;
-}
-
-.about-softskills.dark h3 {
+.dark .about-info p {
     color: #fff;
 }
 
-.about-softskills.dark .experience {
+.dark .about-info img {
+    background-color: #fff;
+}
+
+.dark .about-softskills i {
+    color: #f4f4f4;
+}
+
+.dark .about-softskills h3 {
+    color: #fff;
+}
+
+.dark .about-softskills .experience {
     outline-color: #fff;
 }
 

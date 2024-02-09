@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html  lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,7 +34,7 @@
     </head>
     <body class="toggleNav" id="home">
         <header class="header-menu">
-            <!-- <div class="mobile-menu"> -->
+       
             <i class="toggleMenu ri-menu-2-fill"></i>
             <i class="toggleClose hide ri-close-line"></i>
             <div class="logo">
@@ -46,8 +46,7 @@
                 <input type="checkbox" name="btn" id="btn" />
                 <label for="btn"><div class="circle"></div></label>
             </div>
-            <!-- </div> -->
-            <!-- </div> -->
+
             <nav class="nav-menu-absolute">
                 <ul class="nav-menu">
                     <li><a class="itens-menu" href="#about">Sobre</a></li>
@@ -85,7 +84,7 @@
                     <p class="last_p">Desenvolvedor FullStack</p>
                     <!-- <i class="fa-regular fa-face-laugh-wink fa-spin"></i> -->
                     <div class="dev-links">
-                        <a target="_blank" href="./assets/curriculo victor nepomuceno.pdf"
+                        <a target="_blank" href="./assets/Curriculo.pdf"
                             >Currículo</a
                         >
                         <a href="#contact">Contato</a>
@@ -136,14 +135,14 @@
                                 </h3>
                             </div>
                         </div>
-                        <p class="about-p">
+                        <p>
                             Olá! Meu nome é Victor Nepomuceno e sou um estudante de
                             engenharia de software apaixonado por desenvolvimento
                             fullstack. Atualmente, estou imerso em um mundo de tecnologias
                             empolgantes, como <span>JavaScript</span>,
                             <span>TailwindCSS</span>, <span>TypeScript</span>,
-                            <span>React</span> e <span>Python</span>. Estou constantemente
-                            buscando novos conhecimentos e desafios para aprimorar minhas
+                            <span>React</span> e Python. Estou constantemente buscando
+                            novos conhecimentos e desafios para aprimorar minhas
                             habilidades e expandir meu horizonte técnico. Como um
                             desenvolvedor curioso, estou sempre aberto para explorar novas
                             tecnologias e tendências do mercado.
@@ -212,198 +211,124 @@
                 </div>
             </section>
 
-            <section id="projects">
-                <div class="arrowProjects">
-                    <a class="arrow" href="#contact"
-                        ><i class="fa-solid fa-angles-down"></i
-                    ></a>
-                </div>
-                <div class="hidden from-left"><h2 class="titleMain">Projetos</h2></div>
-                <div class="projects-container">
-                    <div class="projects hidden">
-                        <h3>Lírios Recepções</h3>
-                        <div class="projects-info">
-                            <div class="projects-text">
-                                <p>
-                                    Projeto de design, front-end e back-end do site do
-                                    Lírios Recepções, um salão de recepção localizado em
-                                    Parnamirim-RN. Esse projeto foi pensado do zero por
-                                    mim, o site é uma carta de apresentação e galeria do
-                                    salão com implementação de formulário de contato para
-                                    que os clientes possam entrar em contato com os
-                                    atendentes.
-                                </p>
+            <section id="projects" class="hidden from-left">
+                <h2 class="titleMain">Projetos</h2>
+                <div  class="wrapperProjects">
+                    <div data-tilt class="project">
+                        <div class="titleProject">
+                            <div class="buttons">
+                                <span class="red"></span>
+                                <span class="yellow"></span>
+                                <span class="green"></span>
                             </div>
-                            <div class="projectsTop">
-                                <div class="projects-list">
-                                    <h4 class="spanFont">Tecnologias Utilizadas</h4>
-                                    <ul class="flex-list">
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-html5"></i
-                                            ><span>HTML</span>
-                                        </li>
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-css3-alt"></i
-                                            ><span>CSS</span>
-                                        </li>
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-js"></i
-                                            ><span>JavaScript</span>
-                                        </li>
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-php"></i
-                                            ><span>PHP</span>
-                                        </li>
-                                    </ul>
-                                    <div class="dev-links linksOne">
-                                        <a
-                                            target="_blank"
-                                            href="https://victornepomuceno.github.io/liriosrecepcoes/"
-                                            >Live Demo</a
-                                        >
-                                        <a
-                                            target="_blank"
-                                            href="https://github.com/VictorNepomuceno/liriosrecepcoes"
-                                            >Github</a
-                                        >
-                                    </div>
-                                </div>
-                            </div>
+                            <h3>Lírios Recepções</h3>
                         </div>
-                    </div>
-                    <div class="projects-img hidden from-right">
-                        <img data-tilt src="./assets/liriosImage.jpeg" alt="" />
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <div class="dev-links projectsLinks linksTwo">
-                        <a
-                            target="_blank"
-                            href="https://victornepomuceno.github.io/liriosrecepcoes/"
-                            >Live Demo</a
-                        >
-                        <a
-                            target="_blank"
-                            href="https://github.com/VictorNepomuceno/liriosrecepcoes"
-                            >Github</a
-                        >
+                        <div  class="projects-img ">
+                            <div class="backgroundImage">
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3"></i>
+                            </div>
+                            <img src="./assets/liriosImage.jpeg" alt="" />
+                        </div>
                     </div>
 
-                    <div class="projects hidden">
-                        <h3>Bikcraft</h3>
-                        <div class="projects-info">
-                            <div class="projects-text">
-                                <p>
-                                    Projeto de front-end feito no curso da Origamid. Nesse
-                                    projeto pude aprender muitos conceitos de CSS e
-                                    Javascript e aperfeiçoar minhas habilidades nessas
-                                    tecnologias.
-                                </p>
+                    <div data-tilt class="project">
+                        <div class="titleProject">
+                            <div class="buttons">
+                                <span class="red"></span>
+                                <span class="yellow"></span>
+                                <span class="green"></span>
                             </div>
-                            <div class="projectsTop">
-                                <div class="projects-list">
-                                    <h4 class="spanFont">Tecnologias Utilizadas</h4>
-                                    <ul class="flex-list">
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-html5"></i
-                                            ><span>HTML</span>
-                                        </li>
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-css3-alt"></i
-                                            ><span>CSS</span>
-                                        </li>
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-js"></i
-                                            ><span>JavaScript</span>
-                                        </li>
-                                    </ul>
-                                    <div class="dev-links linksOne">
-                                        <a
-                                            target="_blank"
-                                            href="https://victornepomuceno.github.io/bikcraft/"
-                                            >Live Demo</a
-                                        >
-                                        <a
-                                            target="_blank"
-                                            href="https://github.com/VictorNepomuceno/bikcraft"
-                                            >Github</a
-                                        >
-                                    </div>
-                                </div>
-                            </div>
+                            <h3>Bikcraft</h3>
                         </div>
-                    </div>
-                    <div class="projects-img hidden from-right bikcraft">
-                        <img data-tilt src="./assets/imagemBikcraft.jpeg" alt="" /><i
-                            class="fa-solid fa-eye"
-                        ></i>
-                    </div>
-                    <div class="dev-links projectsLinks linksTwo">
-                        <a
-                            target="_blank"
-                            href="https://victornepomuceno.github.io/bikcraft/"
-                            >Live Demo</a
-                        >
-                        <a
-                            target="_blank"
-                            href="https://github.com/VictorNepomuceno/bikcraft"
-                            >Github</a
-                        >
+                        <div  class="projects-img bikcraft">
+                            <div class="backgroundImage">
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3"></i>
+                            </div>
+                            <img  src="./assets/imagemBikcraft.jpeg" alt="" />
+                        </div>
                     </div>
 
-                    <div class="projects hidden">
-                        <h3>Animais Fantásticos</h3>
-                        <div class="projects-info">
-                            <div class="projects-text">
-                                <p>
-                                    Projeto de front-end feito no curso Origamid. Nesse
-                                    projeto aprendi vários conceitos aprofundados de
-                                    JavaScript que me deixou bem familiarizado com a
-                                    tecnologia e me fez me apaixonar por ela.
-                                </p>
+                    <div data-tilt class="project">
+                        <div class="titleProject">
+                            <div class="buttons">
+                                <span class="red"></span>
+                                <span class="yellow"></span>
+                                <span class="green"></span>
                             </div>
-                            <div class="projectsTop">
-                                <div class="projects-list">
-                                    <h4 class="spanFont">Tecnologias Utilizadas</h4>
-                                    <ul class="flex-list">
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-html5"></i
-                                            ><span>HTML</span>
-                                        </li>
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-css3-alt"></i
-                                            ><span>CSS</span>
-                                        </li>
-                                        <li class="flex-list-inside">
-                                            <i class="fa-brands fa-js"></i
-                                            ><span>JavaScript</span>
-                                        </li>
-                                    </ul>
-                                    <div class="dev-links projectsLinks linksOne">
-                                        <a
-                                            target="_blank"
-                                            href="https://victornepomuceno.github.io/animais-fantasticos/"
-                                            >Live Demo</a
-                                        >
-                                        <a
-                                            target="_blank"
-                                            href="https://github.com/VictorNepomuceno/animais-fantasticos"
-                                            >Github</a
-                                        >
-                                    </div>
-                                </div>
+                            <h3>Animais Fantásticos</h3>
+                        </div>
+                        <div  class="projects-img animais">
+                            <div class="backgroundImage">
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3"></i>
                             </div>
+                            <img  src="./assets/imagemAnimais.jpeg" alt="" />
                         </div>
                     </div>
-                    <div class="projects-img hidden from-right animais">
-                        <img data-tilt src="./assets/imagemAnimais.jpeg" alt="" /><i
-                            class="fa-solid fa-eye"
-                        ></i>
+
+                    <div data-tilt class="project">
+                        <div class="titleProject">
+                            <div class="buttons">
+                                <span class="red"></span>
+                                <span class="yellow"></span>
+                                <span class="green"></span>
+                            </div>
+                            <h3>Dogs</h3>
+                        </div>
+                        <div  class="projects-img">
+                            <div class="backgroundImage">
+                                <i class="fa-brands fa-react"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-css3"></i>
+                            </div>
+                            <img  src="./assets/dogs.jpeg" alt="" />
+                        </div>
                     </div>
-                    <div class="dev-links projectsLinks linksTwo">
-                        <a href="#">Live Demo</a>
-                        <a href="#">Github</a>
+
+                    <div data-tilt class="project">
+                        <div class="titleProject">
+                            <div class="buttons">
+                                <span class="red"></span>
+                                <span class="yellow"></span>
+                                <span class="green"></span>
+                            </div>
+                            <h3>Portfólio Dra. Vitória</h3>
+                        </div>
+                        <div class="projects-img">
+                            <div class="backgroundImage">
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3"></i>
+                            </div>
+                            <img  src="./assets/vitorianepomuceno.jpeg" alt="" />
+                        </div>
                     </div>
-                </div>
+
+                    <div data-tilt class="project">
+                        <div class="titleProject">
+                            <div class="buttons">
+                                <span class="red"></span>
+                                <span class="yellow"></span>
+                                <span class="green"></span>
+                            </div>
+                            <h3>Gestão de clientes</h3>
+                        </div>
+                        <div  class="projects-img">
+                            <div class="backgroundImage">
+                                <i class="fa-brands fa-python"></i>
+                                <img class="flask" src="./assets/flask.svg" alt="">
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <img  src="./assets/GESTAOclientesPython.png" alt="" />
+                        </div>
+                    </div>
+
             </section>
 
             <section id="contact" class="hidden from-left">
@@ -635,8 +560,8 @@
             ><i class="ri-arrow-up-line"></i>
             <div class="toolTip"><p>Voltar para o topo</p></div>
         </a>
-        <script src="./tilt-vanilla.js"></script>
+        <script src="./js/tilt-vanilla.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="./main.js"></script>
+        <script type="module" src="./js/main.js"></script>
     </body>
 </html>

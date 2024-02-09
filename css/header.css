@@ -1,239 +1,239 @@
 .header-menu,
 .nav-menu {
-  display: flex;
+    display: flex;
 }
 
 .menu-icons {
-  display: none;
+    display: none;
 }
 
 .header-menu {
-  justify-content: space-around;
-  padding: 20px 0px 0px 0px;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: -20px;
+    justify-content: space-around;
+    padding: 20px 0px 0px 0px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -20px;
 }
 
 .logo {
-  cursor: default;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  font-family: "Clash Display", sans-serif;
-  font-weight: 600;
+    cursor: default;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
 }
 
 .logo a {
-  color: #333;
-  font-weight: 600;
-  font-family: "Clash Display", sans-serif;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Clash Display', sans-serif;
 }
 
-.logo.dark .itens-menu {
-  color: #fff;
+.dark .logo .itens-menu {
+    color: #fff;
 }
 
 .nav-menu {
-  gap: 25px;
-  flex-wrap: wrap;
-  font-size: 18px;
-  border-radius: 40px;
-  background: #333;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 20px 25px;
-  align-items: center;
-  z-index: 1;
+    gap: 25px;
+    flex-wrap: wrap;
+    font-size: 18px;
+    border-radius: 40px;
+    background: #333;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 20px 25px;
+    align-items: center;
+    z-index: 1;
 }
 
-.nav-menu.dark {
-  background: #fff;
+.dark .nav-menu {
+    background: #fff;
 }
 
 .nav-menu a {
-  padding: 8px 45px;
-  color: #fff;
-  transition: 0.2s;
-  position: relative;
-  border-radius: 40px;
-  position: relative;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  z-index: 1;
+    padding: 8px 45px;
+    color: #fff;
+    transition: 0.2s;
+    position: relative;
+    border-radius: 40px;
+    position: relative;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
 }
 
-.nav-menu.dark .itens-menu {
-  color: #333;
-  font-weight: 500;
+.dark .nav-menu .itens-menu {
+    color: #333;
+    font-weight: 500;
 }
 
-.nav-menu.dark .itens-menu:hover {
-  background: #d3d3d3;
+.dark .nav-menu .itens-menu:hover {
+    background: #d3d3d3;
 }
 
 .nav-menu a:hover {
-  background: #666;
+    background: #666;
 }
 
 .toggleMenu,
 .toggleClose,
 .moon,
 .sun {
-  display: none;
+    display: none;
 }
 
 @media (max-width: 950px) {
-  .header-menu {
-    background-color: #333;
-    padding: 0px 20px 0px 20px;
-    margin-bottom: 0px;
-    width: 100%;
-    position: relative;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header-menu.dark {
-    background-color: #fff;
-  }
-
-  .header-menu.dark .logo a {
-    color: #333;
-  }
-
-  .toggleMenu {
-    display: block;
-    color: #fff;
-    font-size: 23px;
-    animation: animationToggle 0.3s forwards;
-    font-weight: 500;
-  }
-
-  .toggleClose {
-    display: block;
-    font-size: 24px;
-    color: #fff;
-    animation: animationToggle 0.3s forwards;
-    font-weight: 500;
-  }
-
-  .hide {
-    display: none;
-  }
-
-  .dark .toggleMenu,
-  .dark .toggleClose {
-    color: #333;
-  }
-
-  @keyframes animationToggle {
-    from {
-      filter: blur(15px);
-      transform: translateX(-35px);
+    .header-menu {
+        background-color: #333;
+        padding: 0px 20px 0px 20px;
+        margin-bottom: 0px;
+        width: 100%;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
-    to {
-      filter: blur(0px);
-      transform: translateX(0px);
+
+    .dark .header-menu {
+        background-color: #fff;
     }
-  }
 
-  @keyframes animationDarkMode {
-    from {
-      filter: blur(15px);
-      transform: translateX(35px);
+    .dark .header-menu .logo a {
+        color: #333;
     }
-    to {
-      filter: blur(0px);
-      transform: translateX(0px);
+
+    .toggleMenu {
+        display: block;
+        color: #fff;
+        font-size: 23px;
+        animation: animationToggle 0.3s forwards;
+        font-weight: 500;
     }
-  }
 
-  .moon {
-    display: none;
-    color: #333;
-    font-size: 23px;
-    animation: animationDarkMode 0.3s forwards;
-  }
-  .sun {
-    display: block;
-    color: #fff;
-    font-size: 23px;
-    animation: animationDarkMode 0.3s forwards;
-  }
+    .toggleClose {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        animation: animationToggle 0.3s forwards;
+        font-weight: 500;
+    }
 
-  .showIcon {
-    display: block;
-  }
+    .hide {
+        display: none;
+    }
 
-  .hiddenIcon {
-    display: none;
-  }
+    .dark .toggleMenu,
+    .dark .toggleClose {
+        color: #333;
+    }
 
-  .logo {
-    margin-top: 20px;
-    text-align: center;
-  }
+    @keyframes animationToggle {
+        from {
+            filter: blur(15px);
+            transform: translateX(-35px);
+        }
+        to {
+            filter: blur(0px);
+            transform: translateX(0px);
+        }
+    }
 
-  .logo a {
-    color: #fff;
-    font-size: 26px;
-  }
+    @keyframes animationDarkMode {
+        from {
+            filter: blur(15px);
+            transform: translateX(35px);
+        }
+        to {
+            filter: blur(0px);
+            transform: translateX(0px);
+        }
+    }
 
-  .nav-menu-absolute {
-    position: absolute;
-    left: -100%;
-    top: 79px;
-    width: 60%;
-    z-index: 100000;
-    background: #333;
-    height: 100vh;
-    transition: left 0.3s;
-  }
-  .active .nav-menu-absolute {
-    left: 0;
-  }
+    .moon {
+        display: none;
+        color: #333;
+        font-size: 23px;
+        animation: animationDarkMode 0.3s forwards;
+    }
+    .sun {
+        display: block;
+        color: #fff;
+        font-size: 23px;
+        animation: animationDarkMode 0.3s forwards;
+    }
 
-  .dark .nav-menu-absolute {
-    background-color: #fff;
-  }
+    .dark .sun {
+        display: none;
+    }
 
-  .nav-menu {
-    border-radius: 0px;
-    padding: 5rem 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    padding-bottom: 230px;
-    background-color: transparent;
-    box-shadow: none;
-  }
+    .dark .moon {
+        display: block;
+    }
 
-  .nav-menu a:hover {
-    background-color: transparent;
-  }
+    .logo {
+        margin-top: 20px;
+        text-align: center;
+    }
 
-  .nav-menu a {
-    padding: 0px 0px;
-    gap: 0px;
-    font-size: 20px;
-  }
+    .logo a {
+        color: #fff;
+        font-size: 26px;
+    }
 
-  .menu-icons {
-    margin-top: 50px;
-    display: flex;
-    gap: 15px;
-  }
+    .nav-menu-absolute {
+        position: absolute;
+        left: -100%;
+        top: 79px;
+        width: 60%;
+        z-index: 100000;
+        background: #333;
+        height: 100vh;
+        transition: left 0.3s;
+    }
+    .active .nav-menu-absolute {
+        left: 0;
+    }
 
-  .menu-icons i {
-    font-size: 30px;
-  }
+    .dark .nav-menu-absolute {
+        background-color: #fff;
+    }
 
-  .header-menu.dark .menu-icons i {
-    color: #333;
-  }
+    .nav-menu {
+        border-radius: 0px;
+        padding: 5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        padding-bottom: 230px;
+        background-color: transparent;
+        box-shadow: none;
+    }
 
-  .nav-menu.dark .itens-menu:hover {
-    background: transparent;
-  }
+    .nav-menu a:hover {
+        background-color: transparent;
+    }
+
+    .nav-menu a {
+        padding: 0px 0px;
+        gap: 0px;
+        font-size: 20px;
+    }
+
+    .menu-icons {
+        margin-top: 50px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .menu-icons i {
+        font-size: 30px;
+    }
+
+    .dark .header-menu .menu-icons i {
+        color: #333;
+    }
+
+    .dark .nav-menu .itens-menu:hover {
+        background: transparent;
+    }
 }
