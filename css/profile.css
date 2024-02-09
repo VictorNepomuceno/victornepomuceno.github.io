@@ -174,7 +174,7 @@
   color: #777;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   #profile .arrow i {
     left: 2px;
     bottom: 0px;

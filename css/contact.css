@@ -149,7 +149,7 @@
   color: #fff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   #contact {
     margin-top: 7rem;
     margin-bottom: 0px;

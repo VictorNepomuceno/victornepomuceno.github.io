@@ -1,156 +1,149 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 a {
-  color: #000;
+    color: #000;
 }
 
 img {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-  margin: auto 0;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    margin: auto 0;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  /* height: 5000px; */
-  transition: background 0.3s;
-  padding-bottom: 1rem;
-  margin: 0 auto;
-  max-width: 1200px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    /* height: 5000px; */
+    transition: background 0.3s;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 body.dark {
-  background: #333;
+    background: #333;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 p {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Clash Display", sans-serif;
-  letter-spacing: 1px;
+    font-family: 'Clash Display', sans-serif;
+    letter-spacing: 1px;
 }
 
 section {
-  min-height: fit-content;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+    min-height: fit-content;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 label {
-  color: #333;
-  font-size: 18px;
-  font-weight: 600;
-  opacity: 0.8;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.8;
 }
 
 input {
-  padding: 10px 10px;
-  width: 350px;
-  border-radius: 5px;
-  border: none;
-  border: 1px solid #333;
-  font-size: 18px;
-  color: #333;
-  font-family: "Poppins", sans-serif;
+    padding: 10px 10px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #333;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
 }
 input::placeholder {
-  color: #333;
-  opacity: 0.5;
-  font-size: 18px;
+    color: #333;
+    opacity: 0.5;
+    font-size: 18px;
 }
 
 input:focus,
 textarea:focus {
-  border: 1px solid #111;
-  outline: none;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid #111;
+    outline: none;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 textarea {
-  border-radius: 5px;
-  border: 1px solid #333;
-  width: 715px;
-  font-family: "Poppins", sans-serif;
-  padding: 10px 10px;
-  font-size: 19px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    width: 715px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 10px;
+    font-size: 19px;
 }
 
 textarea::placeholder {
-  color: #333;
-  opacity: 0.5;
+    color: #333;
+    opacity: 0.5;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
 }
 
 button {
-  transition: 0.3s;
+    transition: 0.3s;
 }
 
 button:hover {
-  background-color: #555;
-  transform: scale(1.02);
+    background-color: #555;
+    transform: scale(1.02);
 }
 
 label.dark {
-  color: #fff;
-  opacity: 1;
+    color: #fff;
+    opacity: 1;
 }
 button.dark {
-  outline: 1px solid #666;
-  background: #fff;
-  color: #333;
-  transition: all 0.3s ease;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    outline: 1px solid #666;
+    background: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 800px) {
-  .arrow,
-  .arrowAbout,
-  .arrowSkills,
-  .arrowProjects {
-    display: none;
-  }
+@media (max-width: 950px) {
+    body {
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+    }
 
-  body {
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-    padding: 0px;
-  }
-
-  section {
-    padding: 0px;
-    margin: 0px;
-    z-index: 0;
-  }
+    section {
+        padding: 0px;
+        margin: 0px;
+        z-index: 0;
+    }
 }
