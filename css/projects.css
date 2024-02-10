@@ -31,7 +31,7 @@
     background-color: rgba(3, 3, 3, 0.8);
     backdrop-filter: blur(6px);
     height: max-content;
-    width: 650px;
+    width: 660px;
 }
 
 .projects-img {
@@ -123,6 +123,22 @@
 .dark .project {
     background-color: rgba(255, 255, 255, 0.8);
     color: #333;
+}
+
+@media (max-width: 1500px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.875rem;
+        color: #fff;
+        border-radius: 20px;
+        padding-top: 0.875rem;
+        background-color: rgba(3, 3, 3, 0.8);
+        backdrop-filter: blur(6px);
+        height: max-content;
+        width: 550px;
+    }
 }
 
 @media (max-width: 800px) {
