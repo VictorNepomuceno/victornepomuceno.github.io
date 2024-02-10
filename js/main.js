@@ -1,10 +1,11 @@
-import initAnimaScroll from './animaScroll.js';
-import initCloseOnScroll from './closeOnScroll.js';
-import initDarkMode from './darkMode.js';
-import initMenuAtivo from './menuAtivo.js';
-import initModal from './modal.js';
-import initOnLoad from './onLoad.js';
-import initTrilho from './trilho.js';
+import initAnimaScroll from './modules/animaScroll.js';
+import initCloseOnScroll from './modules/closeOnScroll.js';
+import initDarkMode from './modules/darkMode.js';
+import initMenuAtivo from './modules/menuAtivo.js';
+import initModal from './modules/modal.js';
+import initOnLoad from './modules/onLoad.js';
+import initToolTipBox from './modules/toolTipBox.js';
+import initTrilho from './modules/trilho.js';
 
 initMenuAtivo();
 initTrilho();
@@ -13,6 +14,7 @@ initModal();
 initOnLoad();
 initAnimaScroll();
 initCloseOnScroll();
+initToolTipBox();
 
 var swiper = new Swiper('.swiper', {
     loop: true,

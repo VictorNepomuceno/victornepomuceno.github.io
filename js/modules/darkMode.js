@@ -3,6 +3,7 @@ export default function initDarkMode() {
     const sunIcon = document.querySelector('.sun');
     const moonIcon = document.querySelector('.moon');
     const body = document.querySelector('body');
+    const actions = ['click', 'touchstart'];
 
     function handleClick(e) {
         body.classList.toggle('dark', e.target.checked);
@@ -12,7 +13,10 @@ export default function initDarkMode() {
         body.classList.remove('dark');
     }
 
-    btn.addEventListener('click', handleClick);
-    sunIcon.addEventListener('click', handleClick);
-    moonIcon.addEventListener('click', removeDark);
+    actions.forEach((item) => {
+        btn.addEventListener(item, handleClick);
+    });
+
+    sunIcon.addEventListener('pointerdown', handleClick);
+    moonIcon.addEventListener('pointerdown', removeDark);
 }
