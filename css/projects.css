@@ -160,9 +160,10 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .wrapperProjects {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2.5rem;
     }
 
     .project {
@@ -185,11 +186,21 @@
         height: 0.8rem;
     }
 
+    .backgroundImage {
+        display: none;
+    }
+
     .backgroundImage i {
         font-size: 35px;
     }
 
     .backgroundImage img {
         width: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapperProjects {
+        grid-template-columns: 1fr;
     }
 }

@@ -6,9 +6,8 @@
     color: #fff;
 }
 
-#about {
+.aboutID {
     margin-top: -60px;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,10 +15,16 @@
     position: relative;
 }
 
-#about .arrow i,
-#skills .arrow i {
-    left: 600px;
-    bottom: 90px;
+.arrowAbout {
+    transform: translateY(7rem);
+}
+
+#about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-info {
@@ -125,7 +130,7 @@
     outline-color: #fff;
 }
 
-.about-p > span {
+.about-text p > span {
     font-weight: bold;
 }
 
@@ -149,7 +154,7 @@
 
     .about-text p {
         font-size: 15px;
-        max-width: 600px;
+        max-width: 650px;
     }
 
     .about-info {
@@ -166,5 +171,11 @@
 
     .experience h3 {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-text p {
+        word-break: break-all;
     }
 }
