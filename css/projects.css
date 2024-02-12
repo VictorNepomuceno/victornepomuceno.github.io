@@ -144,6 +144,10 @@
     color: #333;
 }
 
+.projectDescription {
+    display: none;
+}
+
 @media (max-width: 1500px) {
     .project {
         display: flex;
@@ -168,6 +172,21 @@
 
     .project {
         max-width: 350px;
+    }
+
+    .projects-img > img {
+        cursor: pointer;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .projectDescription {
+        display: block;
+        text-align: center;
+        padding-bottom: 1rem;
+        font-size: 0.875rem;
+        font-style: italic;
+        font-weight: lighter;
     }
 
     .project h3 {
@@ -202,5 +221,11 @@
 @media (max-width: 800px) {
     .wrapperProjects {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 390px) {
+    .project {
+        max-width: 320px;
     }
 }

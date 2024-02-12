@@ -229,15 +229,6 @@
     }
 }
 @media (max-width: 570px) {
-    #skills .arrow {
-        display: none;
-    }
-
-    #skills {
-        margin-top: 7rem;
-        height: max-content;
-    }
-
     .skills-info-container {
         justify-content: center;
         align-items: center;
@@ -273,5 +264,15 @@
         font-size: 13px;
         font-weight: 500;
         color: #333;
+    }
+}
+
+@media (max-width: 390px) {
+    .skills-box {
+        gap: 30px;
+    }
+
+    .skills-info-container {
+        gap: 30px;
     }
 }
